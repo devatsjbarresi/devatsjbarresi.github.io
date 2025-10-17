@@ -1,0 +1,125 @@
+/* General Layout */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: linear-gradient(180deg, #111 0%, #222 50%, #181818 100%);
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #4f2581 0%, #7b46d8 100%);
+  padding: 0;
+  margin: 0;
+}
+
+header nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 2rem;
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4); */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  z-index: 10;
+}
+
+/* Nav */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+}
+
+nav a {
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.25);
+  color: #ffbe0b;
+}
+
+/* Main content */
+main {
+  background-color: #fff9e6;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 1.5rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body.home main {
+  text-align: center;
+}
+
+body.downloads main,
+body.docs main {
+  text-align: left;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  opacity: 0.8;
+  font-size: 0.9rem;
+  color: #aaa;
+  background: linear-gradient(90deg, #111 0%, #1b1b1b 50%, #111 100%);
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Images */
+img {
+  max-width: 100%;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  background: #5a2ca0;
+  color: white;
+  padding: 0.7rem 1.6rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: none;
+}
+
+.button:hover {
+  background: #7b46d8;
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(90, 44, 160, 0.6);
+}
+
+/* Page-specific layout */
+body.downloads main,
+body.docs main {
+  margin-left: 2rem;
+  margin-right: auto;
+}
+
+body.downloads main hr,
+body.docs main hr {
+  margin: 2rem 0;
+}
+
+body.downloads main ol,
+body.downloads main ul,
+body.docs main ol,
+body.docs main ul {
+  text-align: left;
+  margin-left: 2rem;
+}

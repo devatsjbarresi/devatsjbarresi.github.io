@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        margin: 0;
+        background: #f8f8f8;
+        color: #222;
+      }
+      header {
+        position: sticky;
+        top: 0;
+        background: linear-gradient(90deg, #4f2581, #905cc3);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 1rem 2rem;
+        /* No border-bottom or box-shadow to ensure no line under header */
+        border: none !important;
+        box-shadow: none !important;
+      }
+      header::after {
+        content: none !important;
+        display: none !important;
+      }
+
+      main {
+        margin-top: 0 !important;
+        border-top: none !important;
+      }
+      header img {
+        height: 32px;
+        vertical-align: middle;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 1rem;
+        font-weight: 500;
+        padding: 0.3rem 0.8rem;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50px;
+        backdrop-filter: blur(6px);
+        transition: background 0.3s ease, transform 0.2s ease;
+      }
+      nav a:hover {
+        background: rgba(255, 255, 255, 0.25);
+        transform: translateY(-2px);
+        text-decoration: none;
+      }
+      nav {
+        border-bottom: none !important;
+        box-shadow: none !important;
+      }
+
+      nav a {
+        border: none !important;
+        box-shadow: none !important;
+        outline: none !important;
+      }
+      footer {
+        text-align: center;
+        padding: 2rem;
+        font-size: 0.9rem;
+        opacity: 0.6;
+      }
+    </style>
+  </head>
+  <body>
+  <header style="background: linear-gradient(90deg, #4f2581, #905cc3); color: white; display: flex; align-items: center; justify-content: space-between; padding: 1rem 2rem; position: sticky; top: 0;">
+    <div class="logo-area" style="display: flex; align-items: center; gap: 0.75rem;">
+      <img src="{{ '/assets/logo.png' | relative_url }}" alt="ShowShark Logo" style="height: 100px;">
+      <strong style="font-size: 1.25rem;">{{ site.title }}</strong>
+    </div>
+    <nav style="display: flex; gap: 0.5rem;">
+      <a href="{{ '/' | relative_url }}" style="color: white; text-decoration: none; font-weight: 500;">Home</a>
+      <a href="{{ '/download/' | relative_url }}" style="color: white; text-decoration: none; font-weight: 500;">Download</a>
+      <a href="{{ '/documentation/' | relative_url }}" style="color: white; text-decoration: none; font-weight: 500;">Docs</a>
+      <a href="{{ '/contact/' | relative_url }}" style="color: white; text-decoration: none; font-weight: 500;">Contact</a>
+    </nav>
+  </header>
+
+  <main style="display:flex;justify-content:center;padding:3rem 1rem;background:#fff8e1;min-height:80vh;">
+    <div style="background:white;max-width:900px;width:100%;padding:2rem 3rem;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.08);">
+      {{ content }}
+    </div>
+  </main>
+
+  <footer>
+    © {{ site.title }} — Built with Jekyll
+  </footer>
+  </body>
+</html>

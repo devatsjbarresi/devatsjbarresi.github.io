@@ -1,0 +1,35 @@
+title: ShowShark
+theme: just-the-docs
+
+# URLs
+url: "https://devatsjbarresi.github.io"
+baseurl: "" # leave empty for local serve
+
+# Core
+search_enabled: true
+color_scheme: light
+
+# Collections
+collections:
+  documentation:
+    output: true
+    permalink: /documentation/:path/
+
+# Just the Docs
+just_the_docs:
+  collections:
+    documentation:
+      name: Documentation
+      nav_fold: true
+  main:
+    collection: documentation
+
+# Custom footer content
+footer_content: 'Copyright &copy; 2026 ShowShark. <br><br><script async src="https://js.stripe.com/v3/buy-button.js"></script><stripe-buy-button buy-button-id="buy_btn_1SoodyIHixNQvAkemtH2Yw6X" publishable-key="pk_live_51SonwpIHixNQvAke1GDZi4hdSUx8m2pcazdFISDcBkaL968phkjcQygePFOPJDKKn6j1l3EPduqFZrZJl4BEVJZp00FJ895JPY"></stripe-buy-button>'
+
+# Auxiliary links for top navigation
+aux_links:
+  "About": "/"
+  "Download": "/download/"
+  "Documentation": "/documentation/overview/"
+  "Contact": "/contact/"

@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="docs-container" style="display:flex; min-height:80vh;">
+  <aside class="sidebar" style="width:260px; padding:1.5rem; background:#f8f9fa;">
+    {% if site.data.navigation %}
+      <ul class="nav-list">
+        {% for item in site.data.navigation %}
+          <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </aside>
+
+  <main class="content" style="flex:1; padding:2rem;">
+    {{ content }}
+  </main>
+</div>
