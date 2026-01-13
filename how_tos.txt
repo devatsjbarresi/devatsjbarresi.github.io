@@ -1,0 +1,17 @@
+## Quick Start
+
+cd /Volumes/development/GitSite
+
+
+1. Install dependencies:
+bundle install
+
+2. Serve locally:
+
+cd /Volumes/development/GitSite
+bundle exec jekyll serve
+
+3. Build for production:
+
+cd /Volumes/development/GitSite
+bundle exec jekyll build

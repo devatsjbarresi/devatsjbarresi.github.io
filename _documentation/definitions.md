@@ -1,11 +1,12 @@
-<!-- ---
+---
 layout: default
 title: Definitions
-permalink: /definitions/
-nav_order: 8
---- -->
+permalink: /docs/definitions/
+nav_order: 99
+nav_exclude: true
+---
 
-# Definitions
+<h1 align="center">Definitions</h1>
 
 ### DMX512
 A lighting control standard with 512 channels per universe.
@@ -56,7 +57,7 @@ A set of rules governing the exchange or transmission of data between devices.
 A module in Wireshark that interprets the data structure of a specific protocol.
 
 ### Wireshark
-A network protocol analyzer used for network troubleshooting, analysis, and development.
+A network protocol analyser used for network troubleshooting, analysis, and development.
 
 ### ShowShark
 A Lua-based post-dissector for Wireshark, designed for entertainment network analysis.

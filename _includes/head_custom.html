@@ -1,6 +1,80 @@
 <!-- Disable favicon requests -->
 <link rel="icon" href="data:,">
 
+<!-- Custom callout box styles -->
+<style>
+  /* Callout boxes - targeting blockquote elements directly */
+  blockquote.note {
+    padding: 0.125rem 0.5rem !important;
+    margin: 0.5rem 0 !important;
+    border-left: 4px solid #2196F3 !important;
+    border-radius: 4px !important;
+    background-color: rgba(33, 150, 243, 0.05) !important;
+    color: #5c85b8 !important;
+  }
+
+  blockquote.warning {
+    padding: 0.125rem 0.5rem !important;
+    margin: 0.5rem 0 !important;
+    border-left: 4px solid #ff9800 !important;
+    border-radius: 4px !important;
+    background-color: rgba(255, 152, 0, 0.05) !important;
+    color: #f39c3d !important;
+  }
+
+  blockquote.important {
+    padding: 0.125rem 0.5rem !important;
+    margin: 0.5rem 0 !important;
+    border-left: 4px solid #f44336 !important;
+    border-radius: 4px !important;
+    background-color: rgba(244, 67, 54, 0.05) !important;
+    color: #d66860 !important;
+  }
+
+  blockquote.highlight {
+    padding: 0.125rem 0.5rem !important;
+    margin: 0.5rem 0 !important;
+    border-left: 4px solid #9c27b0 !important;
+    border-radius: 4px !important;
+    background-color: rgba(156, 39, 176, 0.05) !important;
+    color: #a854ba !important;
+  }
+
+  blockquote.new {
+    padding: 0.125rem 0.5rem !important;
+    margin: 0.5rem 0 !important;
+    border-left: 4px solid #4caf50 !important;
+    border-radius: 4px !important;
+    background-color: rgba(76, 175, 80, 0.05) !important;
+    color: #6db571 !important;
+  }
+</style>
+
+<!-- Logo size override -->
+<style>
+  .site-header {
+    min-height: 9rem !important;
+    height: 9rem !important;
+    max-height: 9rem !important;
+  }
+  .site-title {
+    height: 9rem !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    justify-content: center !important;
+  }
+  .site-logo {
+    width: 100% !important;
+    height: 100% !important;
+    background-size: contain !important;
+    background-position: center center !important;
+  }
+  /* Colour overrides */
+  a:not(.button), .site-title {
+    color: #8561E7 !important;
+  }
+</style>
+
 <!-- Ko-fi widget script -->
 <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
 
@@ -8,4 +82,26 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script type="text/javascript">
   emailjs.init('YOUR_PUBLIC_KEY'); // Replace with actual public key
+</script>
+
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function () {
+    var links = document.querySelectorAll('a[href]');
+    links.forEach(function (link) {
+      var href = link.getAttribute('href');
+      if (!href) return;
+      if (href.startsWith('http://') || href.startsWith('https://')) {
+        try {
+          var url = new URL(href, window.location.origin);
+          if (url.origin !== window.location.origin) {
+            link.setAttribute('target', '_blank');
+            link.setAttribute('rel', 'noopener noreferrer');
+          }
+        } catch (e) {
+          link.setAttribute('target', '_blank');
+          link.setAttribute('rel', 'noopener noreferrer');
+        }
+      }
+    });
+  });
 </script>

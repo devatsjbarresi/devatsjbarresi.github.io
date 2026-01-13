@@ -1,19 +1,26 @@
 title: ShowShark
+logo: "/assets/showshark_logo_blue.svg"
 theme: just-the-docs
 
 # URLs
-url: "https://devatsjbarresi.github.io"
-baseurl: "" # leave empty for local serve
+url: "https://showshark.net"
+baseurl: ""
 
 # Core
 search_enabled: true
 color_scheme: light
 
+# Markdown processing
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+  parse_span_html: true
+
 # Collections
 collections:
   documentation:
     output: true
-    permalink: /documentation/:path/
+    permalink: /docs/:path/
 
 # Just the Docs
 just_the_docs:
@@ -31,5 +38,5 @@ footer_content: 'Copyright &copy; 2026 ShowShark. <br><br><script async src="htt
 aux_links:
   "About": "/"
   "Download": "/download/"
-  "Documentation": "/documentation/overview/"
+  "Documentation": "/docs/setup/"
   "Contact": "/contact/"
