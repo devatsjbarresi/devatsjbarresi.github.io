@@ -2,8 +2,8 @@ title: ShowShark
 theme: just-the-docs
 
 # URLs
-url: "https://devatsjbarresi.github.io"
-baseurl: "" # leave empty for local serve
+url: "https://showshark.net"
+baseurl: ""
 
 # Core
 search_enabled: true

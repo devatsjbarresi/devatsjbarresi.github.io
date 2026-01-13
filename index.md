@@ -14,4 +14,6 @@ Its goal is to make entertainment networking easier to understand, while also pr
 
 Whether you are an experienced professional or just starting out, ShowShark helps you see what is really happening between devices on your network.
 
-[Get started](documentation/overview/)
+<div style="text-align: center; margin-top: 2rem;">
+  <a href="documentation/overview/" class="button" style="background-color: #1679a7; color: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-weight: bold; display: inline-block;">Get Started</a>
+</div>
