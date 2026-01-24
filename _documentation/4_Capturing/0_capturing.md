@@ -3,6 +3,8 @@ layout: default
 title: Capturing
 nav_order: 4
 has_children: true
+nav_fold: false
+permalink: /documentation/capturing/
 ---
 
 <h1 align="center">Capturing Network Traffic</h1>
@@ -25,3 +27,10 @@ The more packets you capture, the more complete ShowShark's analysis becomes, bu
 For detailed information on capturing network traffic with Wireshark, refer to the official Wireshark documentation:
 
 [Wireshark User's Guide - Capturing Live Network Data](https://www.wireshark.org/docs/wsug_html_chunked/ChCapCapturingSection.html)
+
+---
+
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <a href="/documentation/guide/filter-builder/">< Filter Builder</a>
+  <span style="visibility: hidden;">></span>
+</div>

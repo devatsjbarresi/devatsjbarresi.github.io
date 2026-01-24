@@ -1,11 +1,12 @@
-<!-- ---
+---
 layout: default
 title: Definitions
-permalink: /definitions/
-nav_order: 8
---- -->
+permalink: /documentation/definitions/
+nav_order: 99
+nav_exclude: true
+---
 
-# Definitions
+<h1 align="center">Definitions</h1>
 
 ### DMX512
 A lighting control standard with 512 channels per universe.

@@ -9,7 +9,7 @@ permalink: /download/
 
   
 <div style="text-align: center;">
-  <p><strong>Latest ShowShark:</strong> Version 1.0.BETA1</p>
+  <p><strong>Latest ShowShark:</strong> Version 1.0.BETA2</p>
   
   <p>
     <a href="#" id="download-btn" class="button" style="background-color: #4f2581; color: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-weight: bold; cursor: pointer;">Download ShowShark</a>
@@ -20,7 +20,11 @@ permalink: /download/
   <p><strong>Requires:</strong> Wireshark 4.0 or later</p>
   
   <p>
-    <a href="https://www.wireshark.org/download.html" class="button" style="background-color: #1679a7; color: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-weight: bold;">Download Wireshark</a>
+    <a href="https://www.wireshark.org/download.html" target="_blank" rel="noopener noreferrer" class="button" style="background-color: #1679a7; color: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-weight: bold;">Download Wireshark</a>
+  </p>
+  
+  <p style="margin-top: 2rem;">
+    <a href="/documentation/setup/installation/" class="button" style="background-color: #4f2581; color: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-weight: bold;">Go to setup documentation</a>
   </p>
 </div>
 
@@ -35,7 +39,7 @@ permalink: /download/
     
     <form id="download-form" action="https://formspree.io/f/meeeenyy" method="POST" novalidate>
       <input type="hidden" name="_subject" value="ShowShark Download">
-      <input type="hidden" name="message" value="Downloaded ShowShark v1.0.BETA1">
+      <input type="hidden" name="message" value="Downloaded ShowShark v1.0.BETA2">
       <input type="hidden" name="info" id="hidden-info" value="Not provided">
       
       <div style="margin-bottom: 1rem;">
@@ -62,8 +66,9 @@ permalink: /download/
   var modal = document.getElementById('download-modal');
   var closeBtn = document.getElementById('close-modal');
   var form = document.getElementById('download-form');
-  var downloadUrl = 'https://github.com/devatsjbarresi/ShowShark-Releases/releases/download/1.0.BETA1/ShowShark_v1_0_BETA1.zip';
-  
+  var downloadUrl = 'https://github.com/devatsjbarresi/ShowShark-Releases/releases/download/1.0.BETA2/ShowShark_v1_0_BETA2.lua';
+
+
   if (!downloadBtn || !modal) return;
   
   downloadBtn.onclick = function(e) {

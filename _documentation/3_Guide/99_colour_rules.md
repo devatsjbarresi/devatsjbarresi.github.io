@@ -1,9 +1,10 @@
 ---
 layout: default
 title: Colour Rules
-parent: Setup
-nav_order: 3
-permalink: /documentation/colour-rules/
+parent: Guide
+nav_order: 5
+nav_exclude: true
+permalink: /documentation/guide/colour-rules/
 ---
 
 <h1 align="center">Applying Colour Rules</h1>
@@ -22,8 +23,14 @@ When the plugin is loaded, it places the colour rules file in the ShowShark docu
 5. Navigate to the ShowShark documents folder and select `ShowShark_Colour_Rules_1.0.colours`.
 6. Click **OK** to apply the colour rules.
 
-![Wireshark Colouring Rules dialog](/assets/colour_rules.png)
+<img src="/assets/images/colour_rules.png" alt="Wireshark Colouring Rules dialog" style="display: block; margin: 0 auto;">
 
 
 > **Note:** The colour rules file includes Wireshark's default colouring rules. It's safe to clear all existing rules before importing—no default colours will be lost.
 
+---
+
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <a href="/documentation/guide/filter-builder/">< Filter Builder</a>
+  <a href="/documentation/capturing/">Capturing ></a>
+</div>
