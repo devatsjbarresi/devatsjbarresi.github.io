@@ -1,0 +1,44 @@
+- major: "Version 1.0"
+  builds:
+
+    - version: "v1.0.BETA3"
+      date: "March 2026"
+      whats_new:
+        - "Added 3 colour filter options."
+        - "Added function to display DMX values by percent, hex or decimal."
+        - "Added <code>show.artnet.poll</code> field."
+        - "Added Art-Net poll flag."
+      whats_fixed:
+        - "Fixed auto-update of host table."
+        - "Handles multicast destination addresses correctly."
+        - "Fixed bug showing multiple devices as IGMP querier."
+        - "Fixed bug showing non-entertainment devices in the host table."
+        - "Significantly improved performance."
+      known_issues:
+        - "Editing manufacturer and protocol filters manually may not update correctly in the Filter Builder."
+        - "Host table is missing filter buttons."
+        - "SLP rows are not added correctly in packet details."
+        - "mDNS does not parse hostnames."
+        - "MAC addresses as source or destination are not handled (for example, layer 2 broadcast)."
+        - "Custom display filter fields <code>show.sacn.universe</code> and <code>show.sacn.dmx</code> are not yet functional."
+
+    - version: "v1.0.BETA2"
+      date: "February 2026"
+      features:
+        - "Support for sACN (E1.31)."
+        - "Support for Art-Net."
+        - "Support for IGMP."
+        - "Support for SLP."
+        - "Entertainment host discovery and visual host tables."
+        - "Enhanced protocol details for entertainment-specific information like universe numbers and priorities in the packet list columns."
+        - "Filter Builder (beta): Build complex Wireshark display filters without memorising syntax using the built-in filter builder."
+        - "Automatic user configuration profile management."
+        - "Colour-coded packet display."
+      known_issues:
+        - "Editing manufacturer and protocol filters manually may not update correctly in the Filter Builder."
+        - "Host table dialog does not refresh automatically."
+        - "Host table is missing a filter button."
+        - "SLP rows are not added correctly in packet details."
+        - "mDNS does not parse hostnames."
+        - "MAC addresses as source or destination are not handled (for example, layer 2 broadcast)."
+        - "Custom display filter fields <code>show.sacn.universe</code> and <code>show.sacn.dmx</code> are not yet functional."
