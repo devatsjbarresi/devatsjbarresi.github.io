@@ -43,3 +43,4 @@ In the Column Preferences window:
 	<div style="text-align: right;"><a href="/docs/guide/filter-builder/">Filter Builder →</a></div>
 </div>
 {:/}
+

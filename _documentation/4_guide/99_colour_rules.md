@@ -36,6 +36,7 @@ When the plugin is loaded, it places the colour rules file in the ShowShark docu
 </div>
 {:/}
 
+
 {: .note }
 > *The table currently doesn't display well on small screens given all the parameters. The window can be stretched to view all columns. The next version will not use the display level settings, but will include filter buttons to show and hide columns for easier viewing.*
 

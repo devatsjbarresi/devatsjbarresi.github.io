@@ -1,21 +1,21 @@
 {"0": {
     "doc": "Contact",
     "title": "Contact",
-    "content": "Feedback, bug reports and feature requests are always well received. Please include as much detail as you can. Captures are extremely useful (I love them) for testing and development, but they can be huge so let me know and we can arrange a way to upload. This is a personal project, so while I do my best to respond to all messages, please be patient if response times are longer than expected. Your Email Address Subject Message Send Message ",
+    "content": "Captures are extremely useful for testing and development, but they can be huge so drop me a message and we can arrange a way to upload. This is a personal project, so while I do my best to respond to all messages, please be patient if response times are longer than expected. Your Email Address Subject Message Send Message ",
     "url": "/contact/",
     
     "relUrl": "/contact/"
   },"1": {
     "doc": "Download",
     "title": "Downloads",
-    "content": "Latest ShowShark: Version 1.0.BETA2 . Download ShowShark . Requires: Wireshark 4.0 or later . Download Wireshark . Go to setup documentation . &times; ",
+    "content": "Latest ShowShark: Version 1.0.BETA3 . Download ShowShark . Requires: Wireshark 4.0 or later . Download Wireshark . Version History Version 1.0 v1.0.BETA3 Date: March 2026 . What's New . | Added 3 colour filter options. | Added function to display DMX values by percent, hex or decimal. | Added show.artnet.poll field. | Added Art-Net poll flag. | . What's Fixed . | Fixed auto-update of host table. | Handles multicast destination addresses correctly. | Fixed bug showing multiple devices as IGMP querier. | Fixed bug showing non-entertainment devices in the host table. | Significantly improved performance. | . Known Issues . | Editing manufacturer and protocol filters manually may not update correctly in the Filter Builder. | Host table is missing filter buttons. | SLP rows are not added correctly in packet details. | mDNS does not parse hostnames. | MAC addresses as source or destination are not handled (for example, layer 2 broadcast). | Custom display filter fields show.sacn.universe and show.sacn.dmx are not yet functional. | . v1.0.BETA2 Date: February 2026 . Features . | Support for sACN (E1.31). | Support for Art-Net. | Support for IGMP. | Support for SLP. | Entertainment host discovery and visual host tables. | Enhanced protocol details for entertainment-specific information like universe numbers and priorities in the packet list columns. | Filter Builder (beta): Build complex Wireshark display filters without memorising syntax using the built-in filter builder. | Automatic user configuration profile management. | Colour-coded packet display. | . Known Issues . | Editing manufacturer and protocol filters manually may not update correctly in the Filter Builder. | Host table dialog does not refresh automatically. | Host table is missing a filter button. | SLP rows are not added correctly in packet details. | mDNS does not parse hostnames. | MAC addresses as source or destination are not handled (for example, layer 2 broadcast). | Custom display filter fields show.sacn.universe and show.sacn.dmx are not yet functional. | . ← About Documentation → &times; ",
     "url": "/download/",
     
     "relUrl": "/download/"
   },"2": {
     "doc": "Download",
-    "title": "A little bit about you",
-    "content": "This helps me understand how ShowShark is being used. You won't be spammed. A little bit about you. If you'd like to keep up with releases, pop your email address in here. Download Now ",
+    "title": "Just quickly...",
+    "content": "A little bit about you (optional).This helps me understand how ShowShark is being used. If you'd like to keep up with releases, pop your email address in here. You won't be spammed. Download Now ",
     "url": "/download/",
     
     "relUrl": "/download/"
@@ -148,28 +148,28 @@
   },"21": {
     "doc": "Menus",
     "title": "Menus",
-    "content": ". ShowShark adds a menu under Tools &gt; ShowShark in Wireshark, making it easy to access plugin features and settings. ",
+    "content": ". Tip: When experimenting with settings, use a small capture file. Wireshark re-processes the entire capture whenever a setting changes, so the larger the file, the longer the wait. ShowShark adds a menu under Tools &gt; ShowShark in Wireshark, making it easy to access plugin features and settings. ",
     "url": "/docs/guide/menus/",
     
     "relUrl": "/docs/guide/menus/"
   },"22": {
     "doc": "Menus",
     "title": "1. User Level",
-    "content": "ShowShark offers two display levels: . Essential . Essential is the default display level, designed to provide a clean and simple view of the most important information to get you started. Advanced . Advanced provides a more detailed view with additional details and information. You can switch between Essential and Advanced at any time by going to Tools &gt; ShowShark &gt; User Level. ",
+    "content": "ShowShark offers two display levels: . Essential . Essential is the default display level, designed to provide a clean and simple view of the most important information to get you started. Advanced . Advanced provides a more detailed view with additional details and information. ",
     "url": "/docs/guide/menus/#1-user-level",
     
     "relUrl": "/docs/guide/menus/#1-user-level"
   },"23": {
     "doc": "Menus",
     "title": "2. Displays",
-    "content": "The Displays submenu provides quick access to reset display settings of the configuration profile (e.g. columns and colours). See the Columns page for more information on column settings. ",
+    "content": "The Displays submenu provides quick access to display settings. The first option resets the packet list columns to the ShowShark defaults (currently tailored toward lighting). You can customise these at any time. See the Columns page for more detail. There are also three colour filter options to help visually distinguish different types of traffic. Colour filters are purely cosmetic; pick whichever you find most readable. ",
     "url": "/docs/guide/menus/#2-displays",
     
     "relUrl": "/docs/guide/menus/#2-displays"
   },"24": {
     "doc": "Menus",
     "title": "3. Show Host Table",
-    "content": "Opens the Host Table window displaying all discovered devices and their properties. See the Host Table page for detailed information. ",
+    "content": "This opens the Host Table window, displaying all discovered devices and their properties. See the Host Table page for more detail. ",
     "url": "/docs/guide/menus/#3-show-host-table",
     
     "relUrl": "/docs/guide/menus/#3-show-host-table"
@@ -183,14 +183,14 @@
   },"26": {
     "doc": "Menus",
     "title": "5. Open Plugin Folder",
-    "content": "Opens the folder where any additional files for ShowShark live (this may be empty). ",
+    "content": "This opens the folder where any additional files for ShowShark live (this may be empty). ",
     "url": "/docs/guide/menus/#5-open-plugin-folder",
     
     "relUrl": "/docs/guide/menus/#5-open-plugin-folder"
   },"27": {
     "doc": "Menus",
     "title": "6. Reload Wireshark Plugins",
-    "content": "Reloads all Lua plugins in Wireshark without restarting the application. You should only really need to use this when updating the ShowShark plugin. ",
+    "content": "This reloads all Lua plugins in Wireshark without restarting the application. You’ll mainly need this when updating ShowShark. ",
     "url": "/docs/guide/menus/#6-reload-wireshark-plugins",
     
     "relUrl": "/docs/guide/menus/#6-reload-wireshark-plugins"
@@ -204,7 +204,7 @@
   },"29": {
     "doc": "Menus",
     "title": "8. About ShowShark",
-    "content": "Displays information about the current ShowShark version, including release notes. ← Capturing Host Table → ",
+    "content": "This displays information about the current ShowShark version, including release notes. ← Capturing Host Table → ",
     "url": "/docs/guide/menus/#8-about-showshark",
     
     "relUrl": "/docs/guide/menus/#8-about-showshark"
@@ -232,7 +232,7 @@
   },"33": {
     "doc": "Host Table",
     "title": "Packet Details Tables",
-    "content": "In the packet details pane (bottom left of the packet windows), depending on your Options settings, you’ll see up to two additional tables: . | Host Properties Table - Shows detailed information about the source or destination host. | Host Protocols Table - Lists all protocols the host has been observed using. | . These tables appear for each packet, providing quick access to host information without opening the main Host Table window. Host Properties Table . The Host Properties Table displays detailed information about each discovered host. If some of the fields below are missing, it just means that ShowShark hasn’t yet discovered that information about the host. | Field | Description | . | ID | Unique identifier for the host. | . | Hostname | Device hostname. | . | IP Address | Current IP address. | . | MAC Address | Hardware address (shown at Advanced level). | . | Manufacturer | Device manufacturer (derived from protocols, MAC OUI, or other sources). | . | MAC Manufacturer | Manufacturer from MAC OUI lookup (shown at Advanced level). | . | Derived Manufacturer | Manufacturer derived from entertainment protocols (shown at Advanced level). | . | Assumed Manufacturer | Manufacturer assumed from packet data and metadata (shown at Advanced level). | . | Device Type | Type of device (e.g., lighting console, fixture). | . | Additional Hostnames | Other hostnames associated with the device. | . Host Protocols Table . Shows which protocols each host is using with a cross (✕) in each protocol column, for example, a device sending sACN packets will have a cross in the sACN column. The protocols table will only show protocols columns of those that at least one host has been seen using. ← Menus Configure Columns → ",
+    "content": "In the packet details pane (bottom left of the packet windows), depending on your Options settings, you’ll see up to two additional tables: . | Host Properties Table - Shows detailed information about the source or destination host. | Host Protocols Table - Lists all protocols the host has been observed using. | . These tables appear for each packet, providing quick access to host information without opening the main Host Table window. Host Properties Table . The Host Properties Table displays detailed information about each discovered host. If some of the fields below are missing, it just means that ShowShark hasn’t yet discovered that information about the host. | Field | Description | . | ID | Unique identifier for the host. | . | Hostname | Device hostname. | . | IP Address | Current IP address. | . | MAC Address | Hardware address (shown at Advanced level). | . | Manufacturer | Device manufacturer (derived from protocols, MAC OUI, or other sources). | . | MAC Manufacturer | Manufacturer from MAC OUI lookup (shown at Advanced level). | . | Derived Manufacturer | Manufacturer derived from entertainment protocols (shown at Advanced level). | . | Assumed Manufacturer | Manufacturer assumed from packet data and metadata (shown at Advanced level). | . | Device Type | Type of device (e.g., lighting console, fixture). | . | Additional Hostnames | Other hostnames associated with the device. | . Host Protocols Table . This table shows which protocols each host is using, with a cross (✕) in each relevant protocol column — for example, a device sending sACN packets will have a cross in the sACN column. The protocols table will only show protocols columns of those that at least one host has been seen using. ← Menus Configure Columns → ",
     "url": "/docs/guide/host-table/#packet-details-tables",
     
     "relUrl": "/docs/guide/host-table/#packet-details-tables"

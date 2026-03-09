@@ -43,3 +43,4 @@ When you first load the ShowShark plugin, a dedicated ShowShark configuration pr
   <div style="text-align: right;"><a href="/docs/capturing/">Capturing →</a></div>
 </div>
 {:/}
+

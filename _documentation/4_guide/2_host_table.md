@@ -67,7 +67,7 @@ The Host Properties Table displays detailed information about each discovered ho
 
 ### Host Protocols Table
 
-Shows which protocols each host is using with a cross (✕) in each protocol column, for example, a device sending sACN packets will have a cross in the sACN column.
+This table shows which protocols each host is using, with a cross (✕) in each relevant protocol column — for example, a device sending sACN packets will have a cross in the sACN column.
 
 The protocols table will only show protocols columns of those that at least one host has been seen using.
 
@@ -79,4 +79,5 @@ The protocols table will only show protocols columns of those that at least one 
   <div style="text-align: right;"><a href="/docs/guide/columns/">Configure Columns →</a></div>
 </div>
 {:/}
+
 

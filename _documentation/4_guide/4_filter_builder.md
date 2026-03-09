@@ -246,3 +246,4 @@ Here are some examples of filters created with the filter builder:
   <div style="text-align: right;"><a href="/docs/resources/">Resources →</a></div>
 </div>
 {:/}
+

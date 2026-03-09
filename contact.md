@@ -7,30 +7,29 @@ permalink: /contact/
 
 # Contact
 
-Feedback, bug reports and feature requests are always well received.
-
-Please include as much detail as you can.
-
-Captures are extremely useful (I love them) for testing and development, but they can be huge so let me know and we can arrange a way to upload.
+> Captures are extremely useful for testing and development, but they can be huge so drop me a message and we can arrange a way to upload.
+{: .note}
 
 This is a personal project, so while I do my best to respond to all messages, please be patient if response times are longer than expected.
 
 {::nomarkdown}
-<form id="contact-form" action="https://formspree.io/f/mreegkqp" method="POST" style="max-width: 600px; margin: 2rem 0;">
+<form id="contact-form" action="https://formspree.io/f/mreegkqp" method="POST" style="width: 100%; margin: 2rem 0;">
   <div style="margin-bottom: 1.5rem;">
     <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Your Email Address</label>
-    <input type="email" name="_replyto" id="email" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem;">
+    <input type="email" name="_replyto" id="email" required placeholder="tellme@example.com" style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem;">
   </div>
   <div style="margin-bottom: 1.5rem;">
     <label for="subject" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Subject</label>
-    <input type="text" name="_subject" id="subject" style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem;">
+    <input type="text" name="_subject" id="subject" placeholder="eg. Bug report, Feature request, I have a capture..." style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem;">
   </div>
   <div style="margin-bottom: 1.5rem;">
     <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Message</label>
-    <textarea name="message" id="message" rows="6" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem; resize: vertical;"></textarea>
+    <textarea name="message" id="message" rows="6" required placeholder="Feedback, bug reports and feature requests are always well received. Please include as much detail as you can." style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem; resize: vertical;"></textarea>
   </div>
   <div id="form-status" style="margin-bottom: 1rem; padding: 0.75rem; border-radius: 4px; display: none;"></div>
-  <button type="submit" id="submit-btn" style="background: #b19cd9; color: white; padding: 0.75rem 2rem; border: none; border-radius: 4px; font-size: 1rem; cursor: pointer; font-weight: 500;">Send Message</button>
+  <div style="text-align: center;">
+  <button type="submit" id="submit-btn" style="background: #8561E7; color: white; padding: 0.75rem 2rem; border: none; border-radius: 4px; font-size: 1rem; cursor: pointer; font-weight: 500;">Send Message</button>
+  </div>
 </form>
 {:/}
 

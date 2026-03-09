@@ -10,6 +10,10 @@ permalink: /docs/guide/menus/
 <h1 align="center">Menus</h1>
 
 ---
+
+{: .note }
+> **Tip:** When experimenting with settings, use a small capture file. Wireshark re-processes the entire capture whenever a setting changes, so the larger the file, the longer the wait.
+
 ShowShark adds a menu under _Tools > ShowShark_ in Wireshark, making it easy to access plugin features and settings.
 
 <p align="center">
@@ -29,17 +33,17 @@ Essential is the default display level, designed to provide a clean and simple v
 
 Advanced provides a more detailed view with additional details and information.
 
-You can switch between Essential and Advanced at any time by going to _Tools > ShowShark > User Level_.
-
 ## 2. Displays
 
-The Displays submenu provides quick access to reset display settings of the configuration profile (e.g. columns and colours).
+The Displays submenu provides quick access to display settings.
 
-See the [Columns](/docs/guide/columns/) page for more information on column settings.
+The first option resets the packet list columns to the ShowShark defaults (currently tailored toward lighting). You can customise these at any time. See the [Columns](/docs/guide/columns/) page for more detail.
+
+There are also three colour filter options to help visually distinguish different types of traffic. Colour filters are purely cosmetic; pick whichever you find most readable.
 
 ## 3. Show Host Table
 
-Opens the Host Table window displaying all discovered devices and their properties. See the [Host Table](/docs/guide/host-table/) page for detailed information.
+This opens the Host Table window, displaying all discovered devices and their properties. See the [Host Table](/docs/guide/host-table/) page for more detail.
 
 ## 4. Options
 
@@ -49,11 +53,11 @@ The dialog gives explanations of each setting and the options available.
 
 ## 5. Open Plugin Folder
 
-Opens the folder where any additional files for ShowShark live (this may be empty).
+This opens the folder where any additional files for ShowShark live (this may be empty).
 
 ## 6. Reload Wireshark Plugins
 
-Reloads all Lua plugins in Wireshark without restarting the application. You should only really need to use this when updating the ShowShark plugin.
+This reloads all Lua plugins in Wireshark without restarting the application. You'll mainly need this when updating ShowShark.
 
 ## 7. Visit ShowShark Website
 
@@ -61,7 +65,7 @@ Come here!
 
 ## 8. About ShowShark
 
-Displays information about the current ShowShark version, including release notes.
+This displays information about the current ShowShark version, including release notes.
 
 ---
 
@@ -71,3 +75,4 @@ Displays information about the current ShowShark version, including release note
   <div style="text-align: right;"><a href="/docs/guide/host-table/">Host Table →</a></div>
 </div>
 {:/}
+

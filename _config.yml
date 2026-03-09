@@ -36,7 +36,4 @@ footer_content: 'Copyright &copy; 2026 ShowShark. <br><br><script async src="htt
 
 # Auxiliary links for top navigation
 aux_links:
-  "About": "/"
-  "Download": "/download/"
-  "Documentation": "/docs/setup/"
-  "Contact": "/contact/"
+  "Contact / Share a Capture": "/contact/"

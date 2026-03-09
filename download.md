@@ -8,27 +8,35 @@ permalink: /download/
 <h1 align="center">Downloads</h1>
 
   
-<div style="text-align: center;">
-  <p><strong>Latest ShowShark:</strong> Version 1.0.BETA2</p>
+<div style="text-align: center; margin-top: 1.5rem;">
+  <p style="margin-bottom: 1.5rem;"><strong>Latest ShowShark:</strong> Version 1.0.BETA3</p>
   
-  <p>
+  <p style="margin-top: 0;">
     <a href="#" id="download-btn" class="button" style="background-color: #8561E7; color: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-weight: bold; cursor: pointer;">Download ShowShark</a>
   </p>
 
   <br>
   
-  <p><strong>Requires:</strong> Wireshark 4.0 or later</p>
+  <p style="margin-bottom: 1.5rem;"><strong>Requires:</strong> Wireshark 4.0 or later</p>
   
-  <p>
-    <a href="https://www.wireshark.org/download.html" target="_blank" rel="noopener noreferrer" class="button" style="background-color: #8561E7; color: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-weight: bold;">Download Wireshark</a>
+  <p style="margin-top: 0;">
+    <a href="https://www.wireshark.org/download.html" target="_blank" rel="noopener noreferrer" class="button" style="background-color: #1D72C4; color: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-weight: bold;">Download Wireshark</a>
   </p>
 
   <br>
-  
-  <p style="margin-top: 2rem;">
-    <a href="/docs/setup/installation/" class="button" style="background-color: #1d71c4; color: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-weight: bold;">Go to setup documentation</a>
-  </p>
 </div>
+
+{::nomarkdown}
+{% include version_history.html %}
+{:/}
+
+{::nomarkdown}
+<hr>
+<div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+  <div><a href="/">← About</a></div>
+  <div style="text-align: right;"><a href="/docs/setup/">Documentation →</a></div>
+</div>
+{:/}
 
 {::nomarkdown}
 <!-- Download Modal -->
@@ -36,25 +44,23 @@ permalink: /download/
   <div style="background-color: white; margin: 10% auto; padding: 2rem; border-radius: 8px; max-width: 500px; position: relative;">
     <span id="close-modal" style="position: absolute; right: 1rem; top: 1rem; font-size: 28px; font-weight: bold; cursor: pointer; color: #999;">&times;</span>
     
-    <h2 style="margin-top: 0;">A little bit about you</h2>
-    <p style="color: #666; margin-bottom: 1.5rem;">This helps me understand how ShowShark is being used. You won't be spammed.</p>
-    
+    <h2 style="margin-top: 0;">Just quickly...</h2>
     <form id="download-form" action="https://formspree.io/f/meeeenyy" method="POST" novalidate>
       <input type="hidden" name="_subject" value="ShowShark Download">
-      <input type="hidden" name="message" value="Downloaded ShowShark v1.0.BETA2">
+      <input type="hidden" name="message" value="Downloaded ShowShark v1.0.BETA3">
       <input type="hidden" name="info" id="hidden-info" value="Not provided">
       
       <div style="margin-bottom: 1rem;">
-        <label for="user-info" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">A little bit about you.</label>
-        <textarea id="user-info" rows="4" placeholder="eg. name, company and your intended use of ShowShark (or just leave it blank)." style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem; box-sizing: border-box; resize: vertical;"></textarea>
+        <label for="user-info" style="display: block; margin-bottom: 0.5rem; color: #666;">A little bit about you (optional).<br>This helps me understand how ShowShark is being used.</label>
+        <textarea id="user-info" rows="4" placeholder="eg. name, company, intended use" style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem; box-sizing: border-box; resize: vertical;"></textarea>
       </div>
       
       <div style="margin-bottom: 1.5rem;">
-        <label for="user-email" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">If you'd like to keep up with releases, pop your email address in here.</label>
-        <input type="text" id="user-email" style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem; box-sizing: border-box;">
+        <label for="user-email" style="display: block; margin-bottom: 0.5rem; color: #666;">If you'd like to keep up with releases, pop your email address in here. You won't be spammed.</label>
+        <input type="text" id="user-email" placeholder="keepmeposted@example.com" style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem; box-sizing: border-box;">
       </div>
       
-      <button type="submit" style="background: #4f2581; color: white; padding: 0.75rem 2rem; border: none; border-radius: 4px; font-size: 1rem; cursor: pointer; font-weight: 500; width: 100%;">
+      <button type="submit" style="background: #8561E7; color: white; padding: 0.75rem 2rem; border: none; border-radius: 4px; font-size: 1rem; cursor: pointer; font-weight: 500; width: 100%;">
         Download Now
       </button>
     </form>
@@ -68,7 +74,7 @@ permalink: /download/
   var modal = document.getElementById('download-modal');
   var closeBtn = document.getElementById('close-modal');
   var form = document.getElementById('download-form');
-  var downloadUrl = 'https://github.com/devatsjbarresi/ShowShark-Releases/releases/download/1.0.BETA2/ShowShark_v1_0_BETA2.lua';
+  var downloadUrl = 'https://github.com/devatsjbarresi/ShowShark-Releases/releases/download/1.0.BETA3/ShowShark_v1_0_BETA3.lua';
 
 
   if (!downloadBtn || !modal) return;

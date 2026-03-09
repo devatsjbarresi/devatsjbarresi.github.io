@@ -39,6 +39,7 @@ The more packets you capture, the more complete ShowShark's analysis becomes, bu
 
 See [ShowShark Resources](/docs/resources/)
 
+---
 
 {::nomarkdown}
 <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
@@ -46,3 +47,4 @@ See [ShowShark Resources](/docs/resources/)
 	<div style="text-align: right;"><a href="/docs/analysing/">Analysing →</a></div>
 </div>
 {:/}
+
