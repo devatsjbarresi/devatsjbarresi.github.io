@@ -47,7 +47,8 @@ Some traffic simply won’t show up from a normal capture on a switched network:
 > You can also use a TAP device that sits between the devices. This can be simpler, but it requires extra hardware and may mean altering your network setup.
 
 ## Explore ShowShark’s Features
-
+{: .tip }
+> If you don't have a capture to hand, open the example capture file from the ShowShark download zip in Wireshark to explore the features.
 See the [Guide](/docs/guide/) section of the documentation to find out more about the ShowShark tools available to help you analyse your network.
 
 ---

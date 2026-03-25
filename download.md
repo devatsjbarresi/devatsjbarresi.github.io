@@ -9,7 +9,7 @@ permalink: /download/
 
   
 <div style="text-align: center; margin-top: 1.5rem;">
-  <p style="margin-bottom: 1.5rem;"><strong>Latest ShowShark:</strong> Version 1.0.BETA3</p>
+  <p style="margin-bottom: 1.5rem;"><strong>Latest ShowShark:</strong> Version 1.0.BETA4</p>
   
   <p style="margin-top: 0;">
     <a href="#" id="download-btn" class="button" style="background-color: #8561E7; color: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-weight: bold; cursor: pointer;">Download ShowShark</a>
@@ -47,7 +47,8 @@ permalink: /download/
     <h2 style="margin-top: 0;">Just quickly...</h2>
     <form id="download-form" action="https://formspree.io/f/meeeenyy" method="POST" novalidate>
       <input type="hidden" name="_subject" value="ShowShark Download">
-      <input type="hidden" name="message" value="Downloaded ShowShark v1.0.BETA3">
+      <input type="hidden" name="message" value="ShowShark download">
+      <input type="hidden" name="version" value="v1.0.BETA4">
       <input type="hidden" name="info" id="hidden-info" value="Not provided">
       
       <div style="margin-bottom: 1rem;">
@@ -74,7 +75,7 @@ permalink: /download/
   var modal = document.getElementById('download-modal');
   var closeBtn = document.getElementById('close-modal');
   var form = document.getElementById('download-form');
-  var downloadUrl = 'https://github.com/devatsjbarresi/ShowShark-Releases/releases/download/1.0.BETA3/ShowShark_v1_0_BETA3.lua';
+  var downloadUrl = 'https://github.com/devatsjbarresi/ShowShark-Releases/releases/download/1.0.BETA4/ShowShark_v1_0_BETA4.zip';
 
 
   if (!downloadBtn || !modal) return;

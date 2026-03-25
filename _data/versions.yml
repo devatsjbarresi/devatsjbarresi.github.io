@@ -1,6 +1,22 @@
 - major: "Version 1.0"
   builds:
 
+    - version: "v1.0.BETA4"
+      date: "March 2026"
+      whats_new:
+        - "Added example capture."
+        - "Added DMX table for Art-Net."
+      whats_fixed:
+        - "Fixed Filter Builder syntax and filter editing."
+        - "Internal refactoring of code."
+      known_issues:
+        - "Editing manufacturer and protocol filters manually may not update correctly in the Filter Builder."
+        - "Host table is missing filter buttons."
+        - "SLP rows are not added correctly in packet details."
+        - "mDNS does not parse hostnames."
+        - "MAC addresses as source or destination are not handled (for example, layer 2 broadcast)."
+        - "Custom display filter fields <code>show.sacn.universe</code> and <code>show.sacn.dmx</code> are not yet functional."
+
     - version: "v1.0.BETA3"
       date: "March 2026"
       whats_new:

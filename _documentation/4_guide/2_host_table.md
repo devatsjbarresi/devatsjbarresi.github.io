@@ -29,6 +29,9 @@ ShowShark gathers information on devices as packets are captured, building a com
 
 The _Tools > ShowShark > Show Host Table_ menu option opens a dedicated window that shows a comprehensive overview of all discovered devices and their characteristics.
 
+{: .tip }
+> If you don't have a capture to hand, open the example capture file from the ShowShark download zip in Wireshark to see the Host Table in action.
+
 If you want to see more detailed information, enable *Advanced* display level from the _Tools > ShowShark > User Level_ menu.
 
 {: .warning }

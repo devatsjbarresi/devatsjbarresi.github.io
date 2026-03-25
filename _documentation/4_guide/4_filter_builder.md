@@ -10,9 +10,6 @@ permalink: /docs/guide/filter-builder/
 
 ---
 
-{: .important }
-> **Known Issue:** Protocol and manufacturer filters are currently a bit buggy and some manual editing may be required to achieve the desired result. See [Manual Editing](#manual-editing-of-filter-bar) below for guidance. This will be fixed in a future update.
-
 ## What are Filters?
 
 Filters in Wireshark allow you to narrow down the packets displayed to only those that match specific criteria. Instead of viewing thousands of packets, you can focus on specific hosts, protocols, manufacturers, or other characteristics. ShowShark's filter builder makes it easy to create these filters without needing to memorize Wireshark's filter syntax.
@@ -25,6 +22,9 @@ Filters are temporary and non-destructive—they only change what you see, not w
 ## Filter Builder Overview
 
 ShowShark includes a filter builder under _Tools > ShowShark Filter Builder..._ to help create Wireshark display filters without needing to know the full filter syntax.
+
+{: .tip }
+> If you don't have a capture to hand, open the example capture file from the ShowShark download zip in Wireshark to try out the Filter Builder.
 
 The filter builder works with your **current display filter** and does not automatically apply changes. You must apply the filter manually in Wireshark by pressing Enter or clicking the Apply button.
 

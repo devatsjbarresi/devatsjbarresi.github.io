@@ -17,9 +17,9 @@ Download and install the latest version of <a href="https://www.wireshark.org/do
 
 Follow the instructions on the Wireshark website to complete the installation; you may need to install additional components such as WinPcap or Npcap on Windows which the installer will guide you through.
 
-### Download the ShowShark Plugin
+### Download and Unzip the ShowShark Plugin
 
-Download the latest version of the ShowShark plugin from the [ShowShark Download page](/download/).
+Download the latest version of the ShowShark plugin from the [ShowShark Download page](/download/). Once downloaded, unzip the file which contains the ShowShark Lua plugin file and an example capture file.
 
 ### Open Wireshark
 
@@ -38,7 +38,7 @@ On first run, Wireshark may prompt you to allow access to network interfaces. Gr
 
 1. Double click the folder path to open it in your file explorer and allow it to create the folder if it doesn't already exist.
 2. Remove any other ShowShark plugin versions from this folder, including any ShowShark specific folders.
-3. Copy the downloaded ShowShark Lua plugin file (e.g., `ShowShark_vX_X.lua`) from downloads into this folder.
+3. Copy the ShowShark Lua plugin file (e.g., `ShowShark_vX_X.lua`) from the unzipped folder into this folder.
 
 ### Enable the Plugin
 
