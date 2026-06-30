@@ -2,8 +2,8 @@
 layout: default
 title: Configure Columns
 parent: Guide
-nav_order: 3
-permalink: /docs/guide/columns/
+nav_order: 40
+permalink: /docs/columns/
 ---
 
 <h1 align="center">Columns</h1>
@@ -27,6 +27,18 @@ There are two types of columns we need; default Wireshark columns and custom Sho
 4. You can reorder columns using the **Up / Down** buttons.
 5. Click **OK** to apply the changes.
 
+## Custom ShowShark Column Examples
+
+When **Type** is set to **Custom**, use a ShowShark field name in the **Fields** box.
+
+- Source Name: `show.source.name`
+- Destination Name: `show.destination.name`
+- Universe: `show.universe`
+- Watcher 1: `show.watcher.1`
+- Watcher 2: `show.watcher.2`
+
+Watcher columns are useful when you want to keep specific protocol values visible in the packet list while stepping through traffic. If you have not set up watchers yet, see [Watchers](/docs/watchers/).
+
 In the Column Preferences window:
 
 <p align="center">
@@ -39,8 +51,8 @@ In the Column Preferences window:
 
 {::nomarkdown}
 <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-	<div><a href="/docs/guide/host-table/">← Host Table</a></div>
-	<div style="text-align: right;"><a href="/docs/guide/filter-builder/">Filter Builder →</a></div>
+	<div><a href="/docs/host-table/">← Host Table</a></div>
+	<div style="text-align: right;"><a href="/docs/filter-builder/">Filter Builder →</a></div>
 </div>
 {:/}
 

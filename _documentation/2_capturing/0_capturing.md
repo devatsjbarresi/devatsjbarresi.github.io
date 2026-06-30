@@ -27,10 +27,10 @@ The more packets you capture, the more complete ShowShark's analysis becomes, bu
 3. **Stop the Capture** - Click the red square button to stop capturing.
 
 4. **Open Host Table** - View discovered devices via _Tools > ShowShark > Host Table_.
-	*See*: [Host Table](/docs/guide/host-table/)
+	*See*: [Host Table](/docs/host-table/)
 
 5. **Explore** - Browse the packet list and packet details panes, and try different column layouts.
-	You can also try display filters (including via ShowShark's [Filter Builder](/docs/guide/filter-builder/)) to focus on specific traffic types.
+	You can also try display filters (including via ShowShark's [Filter Builder](/docs/filter-builder/)) to focus on specific traffic types.
 	*See*: [Wireshark: Packet List Pane](https://www.wireshark.org/docs/wsug_html_chunked/ChUsePacketListPaneSection.html), [Wireshark: Packet Details Pane](https://www.wireshark.org/docs/wsug_html_chunked/ChUsePacketDetailsPaneSection.html), and [Wireshark: Display Filter Toolbar](https://www.wireshark.org/docs/wsug_html_chunked/ChUseFilterToolbarSection.html)
 
 6. **Save Important Captures** - Use _File > Save As_ to keep capture files for later analysis.

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Resources
-nav_order: 6
+nav_order: 8
 has_children: true
 nav_fold: false
 permalink: /docs/resources/
@@ -40,7 +40,7 @@ Note that ShowShark is independent and is not associated with other entities inc
 
 {::nomarkdown}
 <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-  <div><a href="/docs/guide/filter-builder/">← Filter Builder</a></div>
+  <div><a href="/docs/filter-builder/">← Filter Builder</a></div>
   <div style="text-align: right;"></div>
 </div>
 {:/}

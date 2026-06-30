@@ -113,7 +113,7 @@
   },"16": {
     "doc": "Analysing",
     "title": "What is Analysing?",
-    "content": "Analysing is the process of looking at captured network traffic to understand what’s happening on the network. This can include inspecting packet contents and spotting what devices and protocols are active. Future documentation will include more detailed ShowShark and entertainment-specific analysis guidance. A companion app to ShowShark called ShowSquid is currently in development. The goal is to help prompt devices to “talk” to your Wireshark machine, so you have more to work with in ShowShark. ",
+    "content": "Analysing is the process of looking at captured network traffic to understand what’s happening on the network. This can include inspecting packet contents and spotting what devices and protocols are active. Future documentation will include more detailed ShowShark and entertainment-specific analysis guidance. A companion app to ShowShark called ShowSquid is currently in development. The goal is to help prompt devices to “talk” to your Wireshark machine, so you have more to work with in ShowShark. See ShowSquid. ",
     "url": "/docs/analysing/#what-is-analysing",
     
     "relUrl": "/docs/analysing/#what-is-analysing"
@@ -134,305 +134,648 @@
   },"19": {
     "doc": "Analysing",
     "title": "Explore ShowShark’s Features",
-    "content": "If you don’t have a capture to hand, open the example capture file from the ShowShark download zip in Wireshark to explore the features. See the Guide section of the documentation to find out more about the ShowShark tools available to help you analyse your network. ← Capturing Guide → ",
+    "content": "If you don’t have a capture to hand, open the example capture file from the ShowShark download zip in Wireshark to explore the features. See the Features section of the documentation to find out more about the ShowShark tools available to help you analyse your network. ← Capturing Features → ",
     "url": "/docs/analysing/#explore-showsharks-features",
     
     "relUrl": "/docs/analysing/#explore-showsharks-features"
   },"20": {
     "doc": "Guide",
     "title": "Guide",
-    "content": " ",
+    "content": ". This section groups ShowShark tools and workflows in one place, so new pages can be added without changing the overall documentation structure. ",
     "url": "/docs/guide/",
     
     "relUrl": "/docs/guide/"
   },"21": {
+    "doc": "Guide",
+    "title": "Current Guide Modules",
+    "content": ". | Menus - Access points for ShowShark tools and settings. | Configure Columns - Customise packet-list columns for your workflow. | . ",
+    "url": "/docs/guide/#current-guide-modules",
+    
+    "relUrl": "/docs/guide/#current-guide-modules"
+  },"22": {
+    "doc": "Guide",
+    "title": "Features",
+    "content": "Feature-specific tools are documented in the Features section. ",
+    "url": "/docs/guide/#features",
+    
+    "relUrl": "/docs/guide/#features"
+  },"23": {
+    "doc": "Guide",
+    "title": "Planned Modules",
+    "content": "As ShowShark grows, new guide pages will be added here without changing existing links. ",
+    "url": "/docs/guide/#planned-modules",
+    
+    "relUrl": "/docs/guide/#planned-modules"
+  },"24": {
     "doc": "Menus",
     "title": "Menus",
     "content": ". Tip: When experimenting with settings, use a small capture file. Wireshark re-processes the entire capture whenever a setting changes, so the larger the file, the longer the wait. ShowShark adds a menu under Tools &gt; ShowShark in Wireshark, making it easy to access plugin features and settings. ",
-    "url": "/docs/guide/menus/",
+    "url": "/docs/menus/",
     
-    "relUrl": "/docs/guide/menus/"
-  },"22": {
+    "relUrl": "/docs/menus/"
+  },"25": {
     "doc": "Menus",
     "title": "1. User Level",
     "content": "ShowShark offers two display levels: . Essential . Essential is the default display level, designed to provide a clean and simple view of the most important information to get you started. Advanced . Advanced provides a more detailed view with additional details and information. ",
-    "url": "/docs/guide/menus/#1-user-level",
+    "url": "/docs/menus/#1-user-level",
     
-    "relUrl": "/docs/guide/menus/#1-user-level"
-  },"23": {
+    "relUrl": "/docs/menus/#1-user-level"
+  },"26": {
     "doc": "Menus",
     "title": "2. Displays",
     "content": "The Displays submenu provides quick access to display settings. The first option resets the packet list columns to the ShowShark defaults (currently tailored toward lighting). You can customise these at any time. See the Columns page for more detail. There are also three colour filter options to help visually distinguish different types of traffic. Colour filters are purely cosmetic; pick whichever you find most readable. ",
-    "url": "/docs/guide/menus/#2-displays",
+    "url": "/docs/menus/#2-displays",
     
-    "relUrl": "/docs/guide/menus/#2-displays"
-  },"24": {
+    "relUrl": "/docs/menus/#2-displays"
+  },"27": {
     "doc": "Menus",
     "title": "3. Show Host Table",
     "content": "This opens the Host Table window, displaying all discovered devices and their properties. See the Host Table page for more detail. ",
-    "url": "/docs/guide/menus/#3-show-host-table",
+    "url": "/docs/menus/#3-show-host-table",
     
-    "relUrl": "/docs/guide/menus/#3-show-host-table"
-  },"25": {
+    "relUrl": "/docs/menus/#3-show-host-table"
+  },"28": {
     "doc": "Menus",
     "title": "4. Options",
     "content": "This opens the Options dialog where you can configure various ShowShark settings. You can’t break anything from this window; however, most of the useful settings can be accessed from the menus anyway. The dialog gives explanations of each setting and the options available. ",
-    "url": "/docs/guide/menus/#4-options",
+    "url": "/docs/menus/#4-options",
     
-    "relUrl": "/docs/guide/menus/#4-options"
-  },"26": {
+    "relUrl": "/docs/menus/#4-options"
+  },"29": {
     "doc": "Menus",
     "title": "5. Open Plugin Folder",
     "content": "This opens the folder where any additional files for ShowShark live (this may be empty). ",
-    "url": "/docs/guide/menus/#5-open-plugin-folder",
+    "url": "/docs/menus/#5-open-plugin-folder",
     
-    "relUrl": "/docs/guide/menus/#5-open-plugin-folder"
-  },"27": {
+    "relUrl": "/docs/menus/#5-open-plugin-folder"
+  },"30": {
     "doc": "Menus",
     "title": "6. Reload Wireshark Plugins",
     "content": "This reloads all Lua plugins in Wireshark without restarting the application. You’ll mainly need this when updating ShowShark. ",
-    "url": "/docs/guide/menus/#6-reload-wireshark-plugins",
+    "url": "/docs/menus/#6-reload-wireshark-plugins",
     
-    "relUrl": "/docs/guide/menus/#6-reload-wireshark-plugins"
-  },"28": {
+    "relUrl": "/docs/menus/#6-reload-wireshark-plugins"
+  },"31": {
     "doc": "Menus",
     "title": "7. Visit ShowShark Website",
     "content": "Come here! . ",
-    "url": "/docs/guide/menus/#7-visit-showshark-website",
+    "url": "/docs/menus/#7-visit-showshark-website",
     
-    "relUrl": "/docs/guide/menus/#7-visit-showshark-website"
-  },"29": {
+    "relUrl": "/docs/menus/#7-visit-showshark-website"
+  },"32": {
     "doc": "Menus",
     "title": "8. About ShowShark",
-    "content": "This displays information about the current ShowShark version, including release notes. ← Capturing Host Table → ",
-    "url": "/docs/guide/menus/#8-about-showshark",
+    "content": "This displays information about the current ShowShark version, including release notes. ← Capturing Configure Columns → ",
+    "url": "/docs/menus/#8-about-showshark",
     
-    "relUrl": "/docs/guide/menus/#8-about-showshark"
-  },"30": {
+    "relUrl": "/docs/menus/#8-about-showshark"
+  },"33": {
+    "doc": "Watchers",
+    "title": "Watchers",
+    "content": ". Watchers let you capture specific protocol values (for example DMX or OSC values) and expose them as ShowShark watcher columns so you can track how those values change over time. Use Watchers when you want to follow value progression across packets instead of manually opening packet details each time. Watchers are intended to be part of normal analysis workflow: create a watcher, apply it, then add watcher columns to your packet list. ",
+    "url": "/docs/watchers/",
+    
+    "relUrl": "/docs/watchers/"
+  },"34": {
+    "doc": "Watchers",
+    "title": "Quick Start",
+    "content": ". | Open Wireshark and load a capture. | Go to Tools &gt; ShowShark Tools &gt; Watcher. | Add a watcher using Add DMX Watcher or Add OSC Watcher. | Click Apply Watcher. | Add watcher columns in Wireshark column preferences using custom fields like show.watcher.1, show.watcher.2, and so on. | Review value progression directly in the packet list. | . ",
+    "url": "/docs/watchers/#quick-start",
+    
+    "relUrl": "/docs/watchers/#quick-start"
+  },"35": {
+    "doc": "Watchers",
+    "title": "Watcher Types (Current)",
+    "content": ". | Protocol/value watchers exposed by ShowShark internals. | DMX value tracking watchers. | OSC value tracking watchers. | . Watchers are based on ShowShark-captured values that may not appear as normal default packet-dissector fields. ",
+    "url": "/docs/watchers/#watcher-types-current",
+    
+    "relUrl": "/docs/watchers/#watcher-types-current"
+  },"36": {
+    "doc": "Watchers",
+    "title": "Detailed Workflow",
+    "content": " ",
+    "url": "/docs/watchers/#detailed-workflow",
+    
+    "relUrl": "/docs/watchers/#detailed-workflow"
+  },"37": {
+    "doc": "Watchers",
+    "title": "1. Open Watcher Window",
+    "content": "Open Tools &gt; ShowShark Tools &gt; Watcher to launch the watcher editor. ",
+    "url": "/docs/watchers/#1-open-watcher-window",
+    
+    "relUrl": "/docs/watchers/#1-open-watcher-window"
+  },"38": {
+    "doc": "Watchers",
+    "title": "2. Add Watchers",
+    "content": "Use the bottom-row watcher controls: . | Add DMX Watcher | Add OSC Watcher | Revert | Online Help | Apply Watcher | Close | . ",
+    "url": "/docs/watchers/#2-add-watchers",
+    
+    "relUrl": "/docs/watchers/#2-add-watchers"
+  },"39": {
+    "doc": "Watchers",
+    "title": "3. Apply Watchers",
+    "content": "After adding or editing watchers, click Apply Watcher so the active watcher list is used. ",
+    "url": "/docs/watchers/#3-apply-watchers",
+    
+    "relUrl": "/docs/watchers/#3-apply-watchers"
+  },"40": {
+    "doc": "Watchers",
+    "title": "4. Show Watchers in Columns",
+    "content": "Open Wireshark column preferences and add Custom columns that point to watcher fields. Example field names: . | show.watcher.1 | show.watcher.2 | show.watcher.3 | . Use dot index format (show.watcher.1) for watcher field names. ",
+    "url": "/docs/watchers/#4-show-watchers-in-columns",
+    
+    "relUrl": "/docs/watchers/#4-show-watchers-in-columns"
+  },"41": {
+    "doc": "Watchers",
+    "title": "5. Edit or Remove Watchers",
+    "content": "You can manually edit existing watcher entries or remove them from the Watcher window, then re-apply. ",
+    "url": "/docs/watchers/#5-edit-or-remove-watchers",
+    
+    "relUrl": "/docs/watchers/#5-edit-or-remove-watchers"
+  },"42": {
+    "doc": "Watchers",
+    "title": "Output You Should Expect",
+    "content": ". | Watcher values shown in packet-list columns. | Fast visual tracking of value progression across packets. | . ",
+    "url": "/docs/watchers/#output-you-should-expect",
+    
+    "relUrl": "/docs/watchers/#output-you-should-expect"
+  },"43": {
+    "doc": "Watchers",
+    "title": "Practical Playbooks",
+    "content": " ",
+    "url": "/docs/watchers/#practical-playbooks",
+    
+    "relUrl": "/docs/watchers/#practical-playbooks"
+  },"44": {
+    "doc": "Watchers",
+    "title": "DMX Progression Check",
+    "content": ". | Add a DMX watcher. | Apply watchers. | Add a show.watcher.1 column. | Sort or scan packets and verify progression patterns. | . Use this to confirm expected ramps, step changes, or stuck values. Example DMX watcher expression: . | show.sacn.dmx {universe = 1, channel = 1, bit_depth = 16} | . ",
+    "url": "/docs/watchers/#dmx-progression-check",
+    
+    "relUrl": "/docs/watchers/#dmx-progression-check"
+  },"45": {
+    "doc": "Watchers",
+    "title": "OSC Value Check",
+    "content": ". | Add an OSC watcher. | Apply watchers. | Add a show.watcher.1 or show.watcher.2 column. | Verify incoming OSC value changes over time. | . Use this to confirm control data is updating as expected. ",
+    "url": "/docs/watchers/#osc-value-check",
+    
+    "relUrl": "/docs/watchers/#osc-value-check"
+  },"46": {
+    "doc": "Watchers",
+    "title": "Screenshot Placeholders",
+    "content": "Watcher Window Controls . Watcher List After Apply . Packet List with Watcher Columns . ",
+    "url": "/docs/watchers/#screenshot-placeholders",
+    
+    "relUrl": "/docs/watchers/#screenshot-placeholders"
+  },"47": {
+    "doc": "Watchers",
+    "title": "Current Limitations",
+    "content": ". | No special caveats to call out beyond standard workflow. | Documentation examples will expand as more watcher types are added. | . ← Capturing Menus → ",
+    "url": "/docs/watchers/#current-limitations",
+    
+    "relUrl": "/docs/watchers/#current-limitations"
+  },"48": {
     "doc": "Host Table",
     "title": "Host Table",
-    "content": ". More detailed Host Table documentation and screenshots will be available in a future. For now, this page provides a quick overview of the key features and how to access them. ",
-    "url": "/docs/guide/host-table/",
+    "content": ". Host Table gives you a running inventory of devices discovered in the capture, including identity, protocols, and derived metadata. ",
+    "url": "/docs/host-table/",
     
-    "relUrl": "/docs/guide/host-table/"
-  },"31": {
+    "relUrl": "/docs/host-table/"
+  },"49": {
+    "doc": "Host Table",
+    "title": "Where You Can See Host Table Data",
+    "content": "Host Table information appears in two places: . | Main Host Table Window via Tools &gt; ShowShark Tools &gt; Host Table. | Packet Details Tables in the packet details pane for the selected packet. | . Use the main window for network-wide overview and filtering. Use packet details tables for quick per-packet context while drilling into traffic. ",
+    "url": "/docs/host-table/#where-you-can-see-host-table-data",
+    
+    "relUrl": "/docs/host-table/#where-you-can-see-host-table-data"
+  },"50": {
+    "doc": "Host Table",
+    "title": "Quick Start",
+    "content": ". | Open a capture and let traffic run for a short time. | Open Tools &gt; ShowShark Tools &gt; Host Table. | Review discovered hosts and protocols. | Use the bottom controls to filter visible columns and find values. | Export Host Table data to CSV when needed. | . The longer you capture, the more complete Host Table becomes. ",
+    "url": "/docs/host-table/#quick-start",
+    
+    "relUrl": "/docs/host-table/#quick-start"
+  },"51": {
     "doc": "Host Table",
     "title": "Host Discovery",
     "content": "ShowShark gathers information on devices as packets are captured, building a comprehensive picture of “who is on the network and what they are doing?”. ShowShark learns about hosts through multiple different methods, including: . | Manufacturers from MAC address OUIs and protocol metadata. | Hostnames from entertainment protocol announcements. | Entertainment protocols by monitoring the protocol traffic each host sends and receives. | Device types inferred from protocol usage and metadata. | . The longer you leave a capture running, the more detail ShowShark can gather for the Host Table. Host Table data persists when you stop and restart captures, so you can capture in stages and the table remains intact. ",
-    "url": "/docs/guide/host-table/#host-discovery",
+    "url": "/docs/host-table/#host-discovery",
     
-    "relUrl": "/docs/guide/host-table/#host-discovery"
-  },"32": {
+    "relUrl": "/docs/host-table/#host-discovery"
+  },"52": {
     "doc": "Host Table",
-    "title": "Show Host Table Window",
-    "content": "The Tools &gt; ShowShark &gt; Show Host Table menu option opens a dedicated window that shows a comprehensive overview of all discovered devices and their characteristics. If you don’t have a capture to hand, open the example capture file from the ShowShark download zip in Wireshark to see the Host Table in action. If you want to see more detailed information, enable Advanced display level from the Tools &gt; ShowShark &gt; User Level menu. The table currently doesn’t display well on small screens given all the parameters. The window can be stretched to view all columns. The next version will not use the display level settings, but will include filter buttons to show and hide columns for easier viewing. ",
-    "url": "/docs/guide/host-table/#show-host-table-window",
+    "title": "Main Host Table Window",
+    "content": "The Tools &gt; ShowShark Tools &gt; Host Table option opens a dedicated window that shows all discovered hosts and their characteristics. If you don’t have a capture to hand, open the example capture file from the ShowShark download zip in Wireshark to see the Host Table in action. User Level (Essential/Advanced) currently does not change Host Table window columns. Main Window Controls . The Host Table window includes a highlight field plus bottom-row controls for view management. Available controls: . | Refresh Table | ID | Hostname | MAC Addresses | Manufacturers | IP Addresses | Addl Hostnames | Addl Properties | Protocols | Export CSV | Clear Discovered Hosts | . The Highlight field can be used with these controls to focus the table on what you need to inspect. Buttons such as ID, Hostname, Manufacturers, and Protocols are used to toggle which columns are visible. Export currently supports CSV. The table currently doesn’t display well on small screens given all the parameters. The window can be stretched to view all columns. The next version will not use the display level settings, but will include filter buttons to show and hide columns for easier viewing. ",
+    "url": "/docs/host-table/#main-host-table-window",
     
-    "relUrl": "/docs/guide/host-table/#show-host-table-window"
-  },"33": {
+    "relUrl": "/docs/host-table/#main-host-table-window"
+  },"53": {
     "doc": "Host Table",
     "title": "Packet Details Tables",
-    "content": "In the packet details pane (bottom left of the packet windows), depending on your Options settings, you’ll see up to two additional tables: . | Host Properties Table - Shows detailed information about the source or destination host. | Host Protocols Table - Lists all protocols the host has been observed using. | . These tables appear for each packet, providing quick access to host information without opening the main Host Table window. Host Properties Table . The Host Properties Table displays detailed information about each discovered host. If some of the fields below are missing, it just means that ShowShark hasn’t yet discovered that information about the host. | Field | Description | . | ID | Unique identifier for the host. | . | Hostname | Device hostname. | . | IP Address | Current IP address. | . | MAC Address | Hardware address (shown at Advanced level). | . | Manufacturer | Device manufacturer (derived from protocols, MAC OUI, or other sources). | . | MAC Manufacturer | Manufacturer from MAC OUI lookup (shown at Advanced level). | . | Derived Manufacturer | Manufacturer derived from entertainment protocols (shown at Advanced level). | . | Assumed Manufacturer | Manufacturer assumed from packet data and metadata (shown at Advanced level). | . | Device Type | Type of device (e.g., lighting console, fixture). | . | Additional Hostnames | Other hostnames associated with the device. | . Host Protocols Table . This table shows which protocols each host is using, with a cross (✕) in each relevant protocol column — for example, a device sending sACN packets will have a cross in the sACN column. The protocols table will only show protocols columns of those that at least one host has been seen using. ← Menus Configure Columns → ",
-    "url": "/docs/guide/host-table/#packet-details-tables",
+    "content": "In the packet details pane (bottom left of the packet windows), depending on your Options settings, you’ll see up to two additional tables: . | Host Properties Table - Shows detailed information about the source or destination host. | Host Protocols Table - Lists all protocols the host has been observed using. | . These tables appear for each packet, providing quick access to host information without opening the main Host Table window. When To Use Packet Details Tables . | You are already examining a specific packet. | You want quick source/destination host context. | You do not need full-window filtering or export. | . Host Properties Table . The Host Properties Table displays detailed information about each discovered host. If some of the fields below are missing, it just means that ShowShark hasn’t yet discovered that information about the host. | Field | Description | . | ID | Unique identifier for the host. | . | Hostname | Device hostname. | . | IP Address | Current IP address. | . | MAC Address | Hardware address (shown at Advanced level). | . | Manufacturer | Device manufacturer (derived from protocols, MAC OUI, or other sources). | . | MAC Manufacturer | Manufacturer from MAC OUI lookup (shown at Advanced level). | . | Derived Manufacturer | Manufacturer derived from entertainment protocols (shown at Advanced level). | . | Assumed Manufacturer | Manufacturer assumed from packet data and metadata (shown at Advanced level). | . | Device Type | Type of device (e.g., lighting console, fixture). | . | Additional Hostnames | Other hostnames associated with the device. | . Host Protocols Table . This table shows which protocols each host is using, with a cross (✕) in each relevant protocol column - for example, a device sending sACN packets will have a cross in the sACN column. The protocols table will only show protocol columns for protocols that at least one host has been seen using. ",
+    "url": "/docs/host-table/#packet-details-tables",
     
-    "relUrl": "/docs/guide/host-table/#packet-details-tables"
-  },"34": {
+    "relUrl": "/docs/host-table/#packet-details-tables"
+  },"54": {
+    "doc": "Host Table",
+    "title": "Troubleshooting Playbooks",
+    "content": "Device Missing from Host Table . | Confirm packets are arriving for that device. | Let capture run longer to allow host discovery to populate metadata. | Check packet details tables on traffic from that device. | Verify any Host Table filters are not hiding the device. | . Manufacturer or Device Type Not Filled Yet . | Keep capture running to gather more protocol metadata. | Review additional packets from that host. | Re-check Host Table after more traffic has been observed. | . Export Host Inventory for Reporting . | Open main Host Table window. | Apply any filters needed for scope. | Export to CSV. | Attach CSV to troubleshooting notes or handover docs. | . ",
+    "url": "/docs/host-table/#troubleshooting-playbooks",
+    
+    "relUrl": "/docs/host-table/#troubleshooting-playbooks"
+  },"55": {
+    "doc": "Host Table",
+    "title": "Screenshot Placeholders",
+    "content": "Main Host Table Overview . Host Table Filters and Export . ← Watchers Filter Builder → ",
+    "url": "/docs/host-table/#screenshot-placeholders",
+    
+    "relUrl": "/docs/host-table/#screenshot-placeholders"
+  },"56": {
     "doc": "Configure Columns",
     "title": "Columns",
     "content": ". ShowShark adds extra informational fields to the packet list in Wireshark. These columns expose entertainment-specific information such as hostnames and universe numbers. The columns are customisable; however, as a starter, use the default columns provided by ShowShark which are included in the ShowShark Configuration Profile. To reset columns to ShowShark defaults: Go to Tools &gt; ShowShark &gt; 2 Displays &gt; Reset Columns. ",
-    "url": "/docs/guide/columns/",
+    "url": "/docs/columns/",
     
-    "relUrl": "/docs/guide/columns/"
-  },"35": {
+    "relUrl": "/docs/columns/"
+  },"57": {
     "doc": "Configure Columns",
     "title": "Editing Columns",
-    "content": "There are two types of columns we need; default Wireshark columns and custom ShowShark columns. | Right click any column header (where you see Time, Protocol, Info, etc.) in the packet list and choose Column Preferences. | For now, clear all the columns by selecting each one and clicking the – button. | Copy the format as per the screenshot, adding columns using the + button: . | For default Wireshark columns, set the Type to the appropriate type (for example Source for the source IP address). | For ShowShark columns, set the Type to Custom and enter the field name (for example show.source.name for Source Name). | . | You can reorder columns using the Up / Down buttons. | Click OK to apply the changes. | . In the Column Preferences window: . ← Host Table Filter Builder → ",
-    "url": "/docs/guide/columns/#editing-columns",
+    "content": "There are two types of columns we need; default Wireshark columns and custom ShowShark columns. | Right click any column header (where you see Time, Protocol, Info, etc.) in the packet list and choose Column Preferences. | For now, clear all the columns by selecting each one and clicking the – button. | Copy the format as per the screenshot, adding columns using the + button: . | For default Wireshark columns, set the Type to the appropriate type (for example Source for the source IP address). | For ShowShark columns, set the Type to Custom and enter the field name (for example show.source.name for Source Name). | . | You can reorder columns using the Up / Down buttons. | Click OK to apply the changes. | . ",
+    "url": "/docs/columns/#editing-columns",
     
-    "relUrl": "/docs/guide/columns/#editing-columns"
-  },"36": {
+    "relUrl": "/docs/columns/#editing-columns"
+  },"58": {
+    "doc": "Configure Columns",
+    "title": "Custom ShowShark Column Examples",
+    "content": "When Type is set to Custom, use a ShowShark field name in the Fields box. | Source Name: show.source.name | Destination Name: show.destination.name | Universe: show.universe | Watcher 1: show.watcher.1 | Watcher 2: show.watcher.2 | . Watcher columns are useful when you want to keep specific protocol values visible in the packet list while stepping through traffic. If you have not set up watchers yet, see Watchers. In the Column Preferences window: . ← Host Table Filter Builder → ",
+    "url": "/docs/columns/#custom-showshark-column-examples",
+    
+    "relUrl": "/docs/columns/#custom-showshark-column-examples"
+  },"59": {
     "doc": "Configure Columns",
     "title": "Configure Columns",
     "content": " ",
-    "url": "/docs/guide/columns/",
+    "url": "/docs/columns/",
     
-    "relUrl": "/docs/guide/columns/"
-  },"37": {
+    "relUrl": "/docs/columns/"
+  },"60": {
     "doc": "Filter Builder",
     "title": "Filter Builder",
     "content": ". ",
-    "url": "/docs/guide/filter-builder/",
+    "url": "/docs/filter-builder/",
     
-    "relUrl": "/docs/guide/filter-builder/"
-  },"38": {
+    "relUrl": "/docs/filter-builder/"
+  },"61": {
     "doc": "Filter Builder",
     "title": "What are Filters?",
     "content": "Filters in Wireshark allow you to narrow down the packets displayed to only those that match specific criteria. Instead of viewing thousands of packets, you can focus on specific hosts, protocols, manufacturers, or other characteristics. ShowShark’s filter builder makes it easy to create these filters without needing to memorize Wireshark’s filter syntax. Filters are temporary and non-destructive—they only change what you see, not what’s in your capture file. You can apply, remove, or modify filters at any time. Filters can take longer to apply on large capture files. Be patient when applying complex filters to captures with millions of packets. ",
-    "url": "/docs/guide/filter-builder/#what-are-filters",
+    "url": "/docs/filter-builder/#what-are-filters",
     
-    "relUrl": "/docs/guide/filter-builder/#what-are-filters"
-  },"39": {
+    "relUrl": "/docs/filter-builder/#what-are-filters"
+  },"62": {
     "doc": "Filter Builder",
     "title": "Filter Builder Overview",
     "content": "ShowShark includes a filter builder under Tools &gt; ShowShark Filter Builder… to help create Wireshark display filters without needing to know the full filter syntax. If you don’t have a capture to hand, open the example capture file from the ShowShark download zip in Wireshark to try out the Filter Builder. The filter builder works with your current display filter and does not automatically apply changes. You must apply the filter manually in Wireshark by pressing Enter or clicking the Apply button. How the Filter Builder Works . The filter builder adds conditions to the existing display filter rather than replacing it. This allows you to build complex filters step by step: . | New conditions are combined with existing filters using and | Multiple selections within the same category are grouped using or | The resulting filter is written to the display filter bar for review or further editing | Filters are not automatically applied—you must apply them manually in Wireshark | . Pro Tip: The filter builder is great for learning Wireshark’s filter syntax. Build a filter visually, then examine the generated syntax in the display filter bar to understand how it works. ",
-    "url": "/docs/guide/filter-builder/#filter-builder-overview",
+    "url": "/docs/filter-builder/#filter-builder-overview",
     
-    "relUrl": "/docs/guide/filter-builder/#filter-builder-overview"
-  },"40": {
+    "relUrl": "/docs/filter-builder/#filter-builder-overview"
+  },"63": {
     "doc": "Filter Builder",
     "title": "Host Filters",
     "content": "The Host Filters option is the first menu item and opens a window for building filters based on source and destination hosts. This is one of the most commonly used filtering options. To access Host Filters: . Go to Tools &gt; ShowShark Filter Builder… in Wireshark: . How Host Filters Work . The Host Filter window allows you to filter packets based on: . | Host names (device names detected by ShowShark) | IP addresses (individual, ranges, or comma-separated lists) | MAC addresses (full or partial addresses) | . You can specify criteria for source hosts, destination hosts, or both: . | Within the same field, multiple values are combined using or | Between different fields (source vs. destination), filters are combined using and | . Host Name Filtering . Host names use contains matching, which means the filter will match any host whose name contains the text you enter. You can enter multiple host names separated by commas. Example: Filtering for EOS consoles: . IP Address Filtering . IP addresses can be specified in several ways: . Single IP address: . IP address range: . Use the format 10.101.10.6–10.101.10.9 to specify a range: . Complex IP filtering: . Combine individual IPs, ranges, and comma-separated lists: . MAC Address Filtering . MAC addresses support contains matching, comma-separated values, and partial MAC fragments. This is useful when you know the manufacturer portion of the MAC address or want to filter by partial matches. Complex Host Filters . You can combine multiple host filter criteria to create sophisticated filters. Here’s an example of a complex filter using multiple fields: . Remember: The same filtering rules apply to both source and destination host fields. When applied, the generated filter is written to the display filter bar and can be edited manually. ",
-    "url": "/docs/guide/filter-builder/#host-filters",
+    "url": "/docs/filter-builder/#host-filters",
     
-    "relUrl": "/docs/guide/filter-builder/#host-filters"
-  },"41": {
+    "relUrl": "/docs/filter-builder/#host-filters"
+  },"64": {
     "doc": "Filter Builder",
     "title": "Manufacturer Filters",
     "content": "The Manufacturer option opens a list of manufacturers that can be added to the display filter. This allows you to filter packets based on the device manufacturer, which ShowShark determines from MAC addresses. To access Manufacturer Filters: . How Manufacturer Filters Work . When you select a manufacturer: . | If no manufacturer is currently selected, it’s added to the current filter using and | If multiple manufacturers are selected, they are grouped together using or | The filter matches either the source or destination host manufacturer | . Known Issue: Manufacturer filters may require manual editing of the display filter bar. See Manual Editing below for guidance. Manufacturers can be removed by manually editing the display filter bar. See the Manual Editing section below. ",
-    "url": "/docs/guide/filter-builder/#manufacturer-filters",
+    "url": "/docs/filter-builder/#manufacturer-filters",
     
-    "relUrl": "/docs/guide/filter-builder/#manufacturer-filters"
-  },"42": {
+    "relUrl": "/docs/filter-builder/#manufacturer-filters"
+  },"65": {
     "doc": "Filter Builder",
     "title": "Protocol Filters",
     "content": "The Protocol option opens a list of protocols that can be added to the display filter. This is useful for focusing on specific network protocols used in entertainment networks. To access Protocol Filters: . How Protocol Filters Work . When you select a protocol: . | If no protocol is currently selected, it’s added to the current filter using and | If multiple protocols are selected, they are grouped together using or | Some protocols (such as DMX) include sub-menus that allow more specific protocol variants to be selected | . Known Issue: Protocol filters may require manual editing of the display filter bar. See Manual Editing below for guidance. Tip: When using protocol filters, start with broader protocol categories and narrow down using the sub-menus for more specific filtering. Protocols can be removed by manually editing the display filter bar. See the Manual Editing section below. ",
-    "url": "/docs/guide/filter-builder/#protocol-filters",
+    "url": "/docs/filter-builder/#protocol-filters",
     
-    "relUrl": "/docs/guide/filter-builder/#protocol-filters"
-  },"43": {
+    "relUrl": "/docs/filter-builder/#protocol-filters"
+  },"66": {
     "doc": "Filter Builder",
     "title": "Manual Editing of Filter Bar",
     "content": "All filters generated by the filter builder appear in Wireshark’s display filter bar and can be manually edited or refined as needed. This is particularly useful when: . | The filter builder produces unexpected results | You need more precise control over filter logic | You’re working around known bugs in manufacturer or protocol filters | . You can always edit the generated filter directly in the display filter bar. The filter builder provides a good starting point that you can refine manually. Editing Filters . To clear the filter: . | Click the X button on the right side of the display filter bar, or | Select all text in the filter bar and delete it, or | Use the keyboard shortcut Cmd+A then Delete (macOS) or Ctrl+A then Delete (Windows/Linux) | . Tips for manual editing: . | Filters use logical operators: and, or, not | Use parentheses () to group conditions and control precedence | Wireshark will highlight syntax errors in red if your manual edits are invalid | The filter builder provides valid syntax that you can study and modify | You can combine filter builder output with hand-written filters | . Common Manual Edit Scenarios . Removing a condition: Delete the unwanted portion and the connecting and or or operator. Adding negation: Use not or ! before a condition to exclude it. For example: not tcp.port == 80 . Changing operators: Replace and with or (or vice versa) to change filter logic. Refining ranges: Manually adjust IP ranges or port numbers that the filter builder created. ",
-    "url": "/docs/guide/filter-builder/#manual-editing-of-filter-bar",
+    "url": "/docs/filter-builder/#manual-editing-of-filter-bar",
     
-    "relUrl": "/docs/guide/filter-builder/#manual-editing-of-filter-bar"
-  },"44": {
+    "relUrl": "/docs/filter-builder/#manual-editing-of-filter-bar"
+  },"67": {
     "doc": "Filter Builder",
     "title": "Examples",
     "content": "Here are some examples of filters created with the filter builder: . sACN Protocol Filter . Universe Filter . ← Configure Columns Resources → ",
-    "url": "/docs/guide/filter-builder/#examples",
+    "url": "/docs/filter-builder/#examples",
     
-    "relUrl": "/docs/guide/filter-builder/#examples"
-  },"45": {
+    "relUrl": "/docs/filter-builder/#examples"
+  },"68": {
     "doc": "Resources",
     "title": "Resources",
     "content": ". A shortlist of external references used throughout the ShowShark documentation. ",
     "url": "/docs/resources/",
     
     "relUrl": "/docs/resources/"
-  },"46": {
+  },"69": {
     "doc": "Resources",
     "title": "Wireshark",
     "content": ". | How To Set Up a Capture | Capture Interfaces | Main Toolbar | Display Filter Toolbar | Packet List Pane | Packet Details Pane | . ",
     "url": "/docs/resources/#wireshark",
     
     "relUrl": "/docs/resources/#wireshark"
-  },"47": {
+  },"70": {
     "doc": "Resources",
     "title": "Glossaries",
     "content": ". | Computer Hope - Networking Terms | . ",
     "url": "/docs/resources/#glossaries",
     
     "relUrl": "/docs/resources/#glossaries"
-  },"48": {
+  },"71": {
     "doc": "Resources",
     "title": "ETC Resources",
     "content": "Note that ShowShark is independent and is not associated with other entities including ETC, however they do provide some great resources on networking and entertainment protocols. | Wireshark - Setup and Background Info | Network Definitions | EOS Networking Overview | . ← Filter Builder ",
     "url": "/docs/resources/#etc-resources",
     
     "relUrl": "/docs/resources/#etc-resources"
-  },"49": {
+  },"72": {
+    "doc": "Features",
+    "title": "Features",
+    "content": ". This section covers ShowShark feature-specific tools and how to use them. ",
+    "url": "/docs/features/",
+    
+    "relUrl": "/docs/features/"
+  },"73": {
+    "doc": "Features",
+    "title": "Current Features",
+    "content": ". | ShowSquid - Companion app for protocol discovery and live monitoring workflows. | Watchers - Build and manage watcher rules for recurring checks. | Host Table - View discovered hosts, properties, and observed protocols. | Filter Builder - Build Wireshark display filters without memorising syntax. | . ",
+    "url": "/docs/features/#current-features",
+    
+    "relUrl": "/docs/features/#current-features"
+  },"74": {
+    "doc": "Features",
+    "title": "Planned Features",
+    "content": "Additional feature pages will be added here as ShowShark grows. ",
+    "url": "/docs/features/#planned-features",
+    
+    "relUrl": "/docs/features/#planned-features"
+  },"75": {
+    "doc": "ShowSquid",
+    "title": "ShowSquid",
+    "content": ". ShowSquid is a desktop companion app for ShowShark. Its purpose is simple: prompt devices to talk so ShowShark has more to analyse. ",
+    "url": "/docs/showsquid/",
+    
+    "relUrl": "/docs/showsquid/"
+  },"76": {
+    "doc": "ShowSquid",
+    "title": "Purpose",
+    "content": "ShowSquid exists to prompt devices to talk, so you have better traffic to analyse. It is useful when: . | You are on a quiet network and need faster visibility. | You want to surface more protocol activity before deep analysis. | You want ShowShark to have more data to work with for host and protocol insights. | . ",
+    "url": "/docs/showsquid/#purpose",
+    
+    "relUrl": "/docs/showsquid/#purpose"
+  },"77": {
+    "doc": "ShowSquid",
+    "title": "What ShowSquid Does",
+    "content": "At a high level, ShowSquid does three things: . | Prompts network conversations ShowSquid sends protocol-appropriate discovery or stimulus traffic so devices are more likely to respond. | Monitors live protocol activity While running, ShowSquid listens for responses and ongoing traffic across the protocol groups you enabled. | Surfaces activity in a user-friendly way It presents runtime state, protocol TX/RX activity, and timestamped logs so you can immediately see what is active and what is quiet. | . The result is richer traffic in Wireshark and better visibility in ShowShark. ",
+    "url": "/docs/showsquid/#what-showsquid-does",
+    
+    "relUrl": "/docs/showsquid/#what-showsquid-does"
+  },"78": {
+    "doc": "ShowSquid",
+    "title": "Getting Started",
+    "content": ". | Open ShowSquid. | Select one or more network interfaces. | Enable the protocol groups you need. | Enter any required options (for example universes, command presets, or profile toggles). | Click Start. | Watch activity indicators and log output. | Click Stop when finished. | . ShowSquid validates your setup before starting and clearly reports blocked or error states when action is needed. ",
+    "url": "/docs/showsquid/#getting-started",
+    
+    "relUrl": "/docs/showsquid/#getting-started"
+  },"79": {
+    "doc": "ShowSquid",
+    "title": "Protocol Overview (High Level)",
+    "content": " ",
+    "url": "/docs/showsquid/#protocol-overview-high-level",
+    
+    "relUrl": "/docs/showsquid/#protocol-overview-high-level"
+  },"80": {
+    "doc": "ShowSquid",
+    "title": "sACN",
+    "content": ". | Helps surface sACN discovery and data activity. | Useful for universe-level visibility. | Setup properties: universe entry supports comma lists and numeric ranges. | . ",
+    "url": "/docs/showsquid/#sacn",
+    
+    "relUrl": "/docs/showsquid/#sacn"
+  },"81": {
+    "doc": "ShowSquid",
+    "title": "Art-Net (ArtPoll)",
+    "content": ". | Prompts Art-Net discovery responses from compatible devices. | Useful for quickly identifying Art-Net speaking devices. | . ",
+    "url": "/docs/showsquid/#art-net-artpoll",
+    
+    "relUrl": "/docs/showsquid/#art-net-artpoll"
+  },"82": {
+    "doc": "ShowSquid",
+    "title": "mDNS",
+    "content": ". | Surfaces service/device advertisements using multicast DNS. | Useful for seeing service-oriented device announcements. | . ",
+    "url": "/docs/showsquid/#mdns",
+    
+    "relUrl": "/docs/showsquid/#mdns"
+  },"83": {
+    "doc": "ShowSquid",
+    "title": "SLP",
+    "content": ". | Surfaces service announcements exposed through SLP. | Useful for protocol/service capability discovery. | . ",
+    "url": "/docs/showsquid/#slp",
+    
+    "relUrl": "/docs/showsquid/#slp"
+  },"84": {
+    "doc": "ShowSquid",
+    "title": "Manufacturer Multicast Profiles",
+    "content": ". | Monitors vendor-specific multicast behaviors for supported profile groups. | Profile groups: ETC, MA Lighting, Pharos. | . ",
+    "url": "/docs/showsquid/#manufacturer-multicast-profiles",
+    
+    "relUrl": "/docs/showsquid/#manufacturer-multicast-profiles"
+  },"85": {
+    "doc": "ShowSquid",
+    "title": "OSC",
+    "content": ". | Monitors OSC send/receive activity. | Useful when control paths are OSC-driven. | Setup properties: presets, custom command rows, per-row UDP Out and UDP In ports. | . ",
+    "url": "/docs/showsquid/#osc",
+    
+    "relUrl": "/docs/showsquid/#osc"
+  },"86": {
+    "doc": "ShowSquid",
+    "title": "PSN",
+    "content": ". | Monitors receive-side PSN activity. | Useful for seeing PSN traffic presence quickly. | . ",
+    "url": "/docs/showsquid/#psn",
+    
+    "relUrl": "/docs/showsquid/#psn"
+  },"87": {
+    "doc": "ShowSquid",
+    "title": "Essential and Advanced",
+    "content": ". | ShowSquid launches in Essential mode for fast setup. | Use Advanced mode when you need full protocol surface and detailed option panes. | See Advanced Mode for advanced-only detail. | . ",
+    "url": "/docs/showsquid/#essential-and-advanced",
+    
+    "relUrl": "/docs/showsquid/#essential-and-advanced"
+  },"88": {
+    "doc": "ShowSquid",
+    "title": "How ShowSquid Helps ShowShark",
+    "content": "ShowSquid increases the amount and variety of protocol traffic visible during capture sessions. That means ShowShark features can give you useful results sooner. ",
+    "url": "/docs/showsquid/#how-showsquid-helps-showshark",
+    
+    "relUrl": "/docs/showsquid/#how-showsquid-helps-showshark"
+  },"89": {
+    "doc": "ShowSquid",
+    "title": "Screenshot Placeholder",
+    "content": ". ",
+    "url": "/docs/showsquid/#screenshot-placeholder",
+    
+    "relUrl": "/docs/showsquid/#screenshot-placeholder"
+  },"90": {
+    "doc": "ShowSquid",
+    "title": "Next Step",
+    "content": "Continue with Advanced Mode. ← Features Advanced Mode → ",
+    "url": "/docs/showsquid/#next-step",
+    
+    "relUrl": "/docs/showsquid/#next-step"
+  },"91": {
+    "doc": "Advanced Mode",
+    "title": "ShowSquid Advanced Mode",
+    "content": ". ",
+    "url": "/docs/showsquid/advanced/",
+    
+    "relUrl": "/docs/showsquid/advanced/"
+  },"92": {
+    "doc": "Advanced Mode",
+    "title": "What Advanced Mode Is For",
+    "content": "Advanced mode exposes the full protocol surface and option panes so you can tune ShowSquid behavior in more detail. ",
+    "url": "/docs/showsquid/advanced/#what-advanced-mode-is-for",
+    
+    "relUrl": "/docs/showsquid/advanced/#what-advanced-mode-is-for"
+  },"93": {
+    "doc": "Advanced Mode",
+    "title": "How To Access",
+    "content": ". | Open ShowSquid. | Go to View &gt; Level. | Switch to Advanced. | . ",
+    "url": "/docs/showsquid/advanced/#how-to-access",
+    
+    "relUrl": "/docs/showsquid/advanced/#how-to-access"
+  },"94": {
+    "doc": "Advanced Mode",
+    "title": "What Changes in Advanced",
+    "content": ". | More protocol and option controls are visible. | Additional setup properties for protocol groups are available. | Previously used advanced selections are restored. | . ",
+    "url": "/docs/showsquid/advanced/#what-changes-in-advanced",
+    
+    "relUrl": "/docs/showsquid/advanced/#what-changes-in-advanced"
+  },"95": {
+    "doc": "Advanced Mode",
+    "title": "Suggested Use Pattern",
+    "content": ". | Start in Essential for quick operation. | Switch to Advanced when deeper protocol configuration is needed. | Return to Essential when running routine workflows. | . ",
+    "url": "/docs/showsquid/advanced/#suggested-use-pattern",
+    
+    "relUrl": "/docs/showsquid/advanced/#suggested-use-pattern"
+  },"96": {
+    "doc": "Advanced Mode",
+    "title": "Screenshot Placeholder",
+    "content": ". ← Getting Started Analysing → ",
+    "url": "/docs/showsquid/advanced/#screenshot-placeholder",
+    
+    "relUrl": "/docs/showsquid/advanced/#screenshot-placeholder"
+  },"97": {
+    "doc": "Advanced Mode",
+    "title": "Advanced Mode",
+    "content": " ",
+    "url": "/docs/showsquid/advanced/",
+    
+    "relUrl": "/docs/showsquid/advanced/"
+  },"98": {
     "doc": "IGMP",
     "title": "IGMP (Internet Group Management Protocol)",
     "content": "IGMP is the network protocol used by IPv4 systems to manage multicast group memberships. In entertainment networks, IGMP is vital for controlling how lighting and media devices subscribe to multicast groups used by sACN or other streaming data protocols. ",
     "url": "/docs/99_Protocols/4.1_General/igmp/#igmp-internet-group-management-protocol",
     
     "relUrl": "/docs/99_Protocols/4.1_General/igmp/#igmp-internet-group-management-protocol"
-  },"50": {
+  },"99": {
     "doc": "IGMP",
     "title": "Overview",
     "content": "IGMP operates at the network layer and allows devices to: . | Join and leave multicast groups | Report their membership to network switches and routers | Optimise traffic by ensuring multicast data only reaches interested devices | . ShowShark decodes IGMP packets and correlates them with sACN universes and multicast groups, making it easier to understand how data is distributed across the network. ",
     "url": "/docs/99_Protocols/4.1_General/igmp/#overview",
     
     "relUrl": "/docs/99_Protocols/4.1_General/igmp/#overview"
-  },"51": {
+  },"100": {
     "doc": "IGMP",
     "title": "Key Features in ShowShark",
     "content": ". | Identification of IGMPv2 and IGMPv3 messages | Detection of Membership Queries, Reports, and Leave Group messages | Tracking of queriers and last-query intervals | Highlighting of entertainment multicast addresses (239.255.x.x) | . ",
     "url": "/docs/99_Protocols/4.1_General/igmp/#key-features-in-showshark",
     
     "relUrl": "/docs/99_Protocols/4.1_General/igmp/#key-features-in-showshark"
-  },"52": {
+  },"101": {
     "doc": "IGMP",
     "title": "Example Uses",
     "content": ". | Diagnosing missing lighting data caused by absent group memberships | Confirming correct querier election and timing | Detecting devices flooding the network with unnecessary multicast joins | . This section will soon include detailed IGMP packet breakdowns, querier timing visualisation, and examples of sACN universe joins. ",
     "url": "/docs/99_Protocols/4.1_General/igmp/#example-uses",
     
     "relUrl": "/docs/99_Protocols/4.1_General/igmp/#example-uses"
-  },"53": {
+  },"102": {
     "doc": "IGMP",
     "title": "IGMP",
     "content": " ",
     "url": "/docs/99_Protocols/4.1_General/igmp/",
     
     "relUrl": "/docs/99_Protocols/4.1_General/igmp/"
-  },"54": {
+  },"103": {
     "doc": "ACN / sACN",
     "title": "ACN",
     "content": "ACN (Architecture for Control Networks) is a suite of protocols for entertainment control, defined by the ESTA E1.17 standard. sACN (Streaming ACN), defined by E1.31, is the most widely used ACN protocol for streaming DMX512 data over IP networks. ",
     "url": "/protocols/lighting/acn#acn",
     
     "relUrl": "/protocols/lighting/acn#acn"
-  },"55": {
+  },"104": {
     "doc": "ACN / sACN",
     "title": "sACN",
     "content": " ",
     "url": "/protocols/lighting/acn#sacn",
     
     "relUrl": "/protocols/lighting/acn#sacn"
-  },"56": {
+  },"105": {
     "doc": "ACN / sACN",
     "title": "ACN",
     "content": "See DMX See sACN See Universe See Node See Priority See MAC Address See IP Address See Multicast See Packet See Protocol See Dissector See Wireshark See ShowShark See ESTA See E1.17 See E1.31 See Art-Net . ",
     "url": "/protocols/lighting/acn#acn-1",
     
     "relUrl": "/protocols/lighting/acn#acn-1"
-  },"57": {
+  },"106": {
     "doc": "ACN / sACN",
     "title": "ACN / sACN",
     "content": " ",
     "url": "/protocols/lighting/acn",
     
     "relUrl": "/protocols/lighting/acn"
-  },"58": {
+  },"107": {
     "doc": "Art-Net",
     "title": "Art-Net",
     "content": "ShowShark groups Art-Net traffic under Lighting &gt; Art-Net. This dissector interprets Art-Net packets including: . | ArtPoll and ArtPollReply for node discovery | ArtDMX for DMX512-A data transport | Universe and subnet mappings | Node names and version information | . Use this view to confirm correct packet routing, identify nodes, and verify lighting network behaviour. ",
     "url": "/docs/99_Protocols/Lighting/artnet/",
     
     "relUrl": "/docs/99_Protocols/Lighting/artnet/"
-  },"59": {
+  },"108": {
     "doc": "Discovery Protocols",
     "title": "Discovery Protocols",
     "content": " ",
     "url": "/protocols/discovery",
     
     "relUrl": "/protocols/discovery"
-  },"60": {
+  },"109": {
     "doc": "Lighting",
     "title": "Lighting Protocols",
     "content": "ShowShark’s Lighting category covers sACN, Art‑Net, and related DMX‑over‑IP data. These dissectors display universe numbers, priorities, and frame details directly in Wireshark’s Info column. Use the following pages for specific guidance: . | ACN/sACN - Streaming ACN protocols | Art-Net - Art-Net protocol details | . Use this section when inspecting lighting traffic, verifying data flow, or comparing protocol behaviour across devices. ",
     "url": "/docs/99_Protocols/lighting/#lighting-protocols",
     
     "relUrl": "/docs/99_Protocols/lighting/#lighting-protocols"
-  },"61": {
+  },"110": {
     "doc": "Lighting",
     "title": "Lighting",
     "content": " ",
     "url": "/docs/99_Protocols/lighting/",
     
     "relUrl": "/docs/99_Protocols/lighting/"
-  },"62": {
+  },"111": {
     "doc": "Definitions",
     "title": "Definitions",
     "content": "DMX512 . A lighting control standard with 512 channels per universe. sACN . Streaming ACN. DMX-style data over IP. Universe . A logical grouping of 512 DMX channels. Node . A device on a lighting network. Art-Net . A protocol for DMX over IP networks. RDMnet . Remote Device Management over IP. OSC . Open Sound Control protocol for multimedia devices. IGMP . Internet Group Management Protocol for multicast. mDNS / SLP . Protocols for service discovery on local networks. Priority . A value indicating the importance of data in sACN. MAC Address . A unique identifier assigned to network interfaces for communications at the data link layer of a network segment. IP Address . A numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communications. Multicast . A method of sending network packets to a group of interested receivers in a single transmission. Packet . A formatted unit of data carried by a packet-switched network. Protocol . A set of rules governing the exchange or transmission of data between devices. Dissector . A module in Wireshark that interprets the data structure of a specific protocol. Wireshark . A network protocol analyser used for network troubleshooting, analysis, and development. ShowShark . A Lua-based post-dissector for Wireshark, designed for entertainment network analysis. ESTA . Entertainment Services and Technology Association, which defines standards for entertainment technology. E1.17 . A standard defining the Architecture for Control Networks (ACN). E1.31 . A standard defining Streaming ACN (sACN) for DMX512 over IP networks. DMX512-A . An updated version of the DMX512 standard with additional features and improvements. ArtPoll . A type of Art-Net packet used for node discovery. ArtPollReply . A type of Art-Net packet sent in response to an ArtPoll, providing node information. ArtDMX . A type of Art-Net packet used for transporting DMX512-A data. Subnet . A subdivision of a network, allowing for better organisation and management of IP addresses. Node Name . A human-readable identifier assigned to a network node for easier recognition. ",

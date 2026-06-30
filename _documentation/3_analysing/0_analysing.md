@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Analysing
-nav_order: 4
+nav_order: 7
 has_children: true
 nav_fold: false
 permalink: /docs/analysing/
@@ -19,7 +19,7 @@ Analysing is the process of looking at captured network traffic to understand wh
 > Future documentation will include more detailed ShowShark and entertainment-specific analysis guidance.
 
 {: .note }
-> A companion app to ShowShark called **ShowSquid** is currently in development. The goal is to help prompt devices to “talk” to your Wireshark machine, so you have more to work with in ShowShark.
+> A companion app to ShowShark called **ShowSquid** is currently in development. The goal is to help prompt devices to “talk” to your Wireshark machine, so you have more to work with in ShowShark. See [ShowSquid](/docs/showsquid/).
 
 ## What You Will See
 
@@ -49,14 +49,14 @@ Some traffic simply won’t show up from a normal capture on a switched network:
 ## Explore ShowShark’s Features
 {: .tip }
 > If you don't have a capture to hand, open the example capture file from the ShowShark download zip in Wireshark to explore the features.
-See the [Guide](/docs/guide/) section of the documentation to find out more about the ShowShark tools available to help you analyse your network.
+See the [Features](/docs/features/) section of the documentation to find out more about the ShowShark tools available to help you analyse your network.
 
 ---
 
 {::nomarkdown}
 <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
 	<div><a href="/docs/capturing/">← Capturing</a></div>
-	<div style="text-align: right;"><a href="/docs/guide/">Guide →</a></div>
+	<div style="text-align: right;"><a href="/docs/features/">Features →</a></div>
 </div>
 {:/}
 

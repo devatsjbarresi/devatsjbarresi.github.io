@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Filter Builder
-parent: Guide
-nav_order: 4
-permalink: /docs/guide/filter-builder/
+parent: Features
+nav_order: 50
+permalink: /docs/filter-builder/
 ---
 
 <h1 align="center">Filter Builder</h1>
@@ -242,7 +242,7 @@ Here are some examples of filters created with the filter builder:
 
 {::nomarkdown}
 <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-  <div><a href="/docs/guide/columns/">← Configure Columns</a></div>
+  <div><a href="/docs/columns/">← Configure Columns</a></div>
   <div style="text-align: right;"><a href="/docs/resources/">Resources →</a></div>
 </div>
 {:/}

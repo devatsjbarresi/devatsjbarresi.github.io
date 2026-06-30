@@ -3,7 +3,7 @@ layout: default
 title: Colour Rules
 nav_exclude: true
 published: false
-permalink: /docs/guide/colour-rules/
+permalink: /docs/colour-rules/
 ---
 
 <h1 align="center">Applying Colour Rules</h1>
@@ -31,7 +31,7 @@ When the plugin is loaded, it places the colour rules file in the ShowShark docu
 
 {::nomarkdown}
 <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-	<div><a href="/docs/guide/filter-builder/">← Filter Builder</a></div>
+	<div><a href="/docs/filter-builder/">← Filter Builder</a></div>
 	<div style="text-align: right;"><a href="/docs/capturing/">Capturing →</a></div>
 </div>
 {:/}

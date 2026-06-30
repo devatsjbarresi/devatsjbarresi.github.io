@@ -2,9 +2,9 @@
 layout: default
 title: Menus
 parent: Guide
-nav_order: 1
+nav_order: 20
 nav_fold: false
-permalink: /docs/guide/menus/
+permalink: /docs/menus/
 ---
 
 <h1 align="center">Menus</h1>
@@ -37,13 +37,13 @@ Advanced provides a more detailed view with additional details and information.
 
 The Displays submenu provides quick access to display settings.
 
-The first option resets the packet list columns to the ShowShark defaults (currently tailored toward lighting). You can customise these at any time. See the [Columns](/docs/guide/columns/) page for more detail.
+The first option resets the packet list columns to the ShowShark defaults (currently tailored toward lighting). You can customise these at any time. See the [Columns](/docs/columns/) page for more detail.
 
 There are also three colour filter options to help visually distinguish different types of traffic. Colour filters are purely cosmetic; pick whichever you find most readable.
 
 ## 3. Show Host Table
 
-This opens the Host Table window, displaying all discovered devices and their properties. See the [Host Table](/docs/guide/host-table/) page for more detail.
+This opens the Host Table window, displaying all discovered devices and their properties. See the [Host Table](/docs/host-table/) page for more detail.
 
 ## 4. Options
 
@@ -72,7 +72,7 @@ This displays information about the current ShowShark version, including release
 {::nomarkdown}
 <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
   <div><a href="/docs/capturing/">← Capturing</a></div>
-  <div style="text-align: right;"><a href="/docs/guide/host-table/">Host Table →</a></div>
+  <div style="text-align: right;"><a href="/docs/columns/">Configure Columns →</a></div>
 </div>
 {:/}
 
