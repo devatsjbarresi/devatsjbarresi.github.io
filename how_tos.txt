@@ -1,17 +1,56 @@
 ## Quick Start
 
-cd /Volumes/development/GitSite
+cd /Users/Seb/Development/GitSite
 
 
 1. Install dependencies:
-bundle install
+PATH="/usr/local/opt/ruby/bin:$PATH" bundle install
 
 2. Serve locally:
 
-cd /Volumes/development/GitSite
-bundle exec jekyll serve
+cd /Users/Seb/Development/GitSite
+PATH="/usr/local/opt/ruby/bin:$PATH" bundle exec jekyll serve --host 127.0.0.1 --port 4000
 
 3. Build for production:
 
-cd /Volumes/development/GitSite
-bundle exec jekyll build
+cd /Users/Seb/Development/GitSite
+PATH="/usr/local/opt/ruby/bin:$PATH" bundle exec jekyll build
+
+
+## Fast Runbook (Copy/Paste)
+
+Start local server on loopback:
+
+pushd /Users/Seb/Development/GitSite >/dev/null && PATH="/usr/local/opt/ruby/bin:$PATH" bundle exec jekyll serve --host 127.0.0.1 --port 4000
+
+Check server health:
+
+curl -I --max-time 5 http://127.0.0.1:4000/
+
+
+## Troubleshooting
+
+If "Could not locate Gemfile":
+
+- You started from the wrong folder. Use:
+	cd /Users/Seb/Development/GitSite
+
+If "bundler: command not found: jekyll":
+
+- Dependencies are not installed in this environment. Run:
+	PATH="/usr/local/opt/ruby/bin:$PATH" bundle install
+
+If "Address already in use - bind(2) for 127.0.0.1:4000":
+
+- Something is already serving on that port. Check:
+	lsof -nP -iTCP:4000 -sTCP:LISTEN
+
+- If the running process is Jekyll, just use the site at:
+	http://127.0.0.1:4000/
+
+- Otherwise stop the process and restart Jekyll.
+
+If native gem compile fails on system Ruby:
+
+- Use Homebrew Ruby via PATH for all bundle/jekyll commands:
+	PATH="/usr/local/opt/ruby/bin:$PATH" ...
