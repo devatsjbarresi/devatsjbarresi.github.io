@@ -2,7 +2,7 @@
   builds:
 
     - version: "v1.0.BETA4"
-      date: "March 2026"
+      date: "April 2026"
       whats_new:
         - "Added example capture."
         - "Added DMX table for Art-Net."

@@ -1,24 +1,24 @@
 ---
 layout: default
 title: Configuration Profile
-parent: Setup
+parent: Guide
 nav_order: 2
-permalink: /docs/setup/configuration-profile/
+permalink: /docs/configuration-profile/
 ---
 
 <h1 align="center">Configuration Profile</h1>
 
 ---
 
-Wireshark uses configuration profiles to manage settings like layouts, column settings, colour filters and other preferences. ShowShark creates a dedicated profile that gives you:
+The ShowShark configuration profile sets up Wireshark's layout and colours to make device and protocol information easier to see. You can customise it later, but for now we'll use the ShowShark defaults.
 
-- **ShowShark-specific columns:** Designed to show relevant entertainment information in the packet list. You can customise the columns to suit your needs or reset them at any time via _Tools > ShowShark > 2 Displays > Reset Columns_.
+- **ShowShark-specific columns:** Shows relevant entertainment information in the packet list.
 
-- **ShowShark-specific colours:** A specially selected set of colour rules that highlight packets based on entertainment protocol type, making it easier to visually distinguish in the packet list. The colour rules can be reset to the ShowShark defaults at any time via _Tools > ShowShark > 2 Displays > Reset Colours_.
+- **ShowShark-specific colours:** Highlights packets by entertainment protocol, making them easier to distinguish.
 
-### Enabling the ShowShark Profile
+## Enable the ShowShark Profile
 
-When you first load the ShowShark plugin, a dedicated ShowShark configuration profile is automatically created. To activate it:
+ShowShark creates its configuration profile when the plugin first loads. To enable it:
 
 1. Go to _Edit > Configuration Profiles_
 
@@ -39,8 +39,7 @@ When you first load the ShowShark plugin, a dedicated ShowShark configuration pr
 
 {::nomarkdown}
 <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-  <div><a href="/docs/setup/installation/">← Installation</a></div>
-  <div style="text-align: right;"><a href="/docs/capturing/">Capturing →</a></div>
+  <div><a href="/docs/installation/">← Installation</a></div>
+  <div style="text-align: right;"><a href="/docs/menus/">Menus →</a></div>
 </div>
 {:/}
-

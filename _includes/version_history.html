@@ -3,48 +3,41 @@
 
   <div style="padding-left: 1rem; margin-top: 0.5rem;">
     {% for major in site.data.versions %}
-    <details>
-      <summary>{{ major.major }}</summary>
+      {% for build in major.builds %}
+      <details>
+        <summary>{{ build.version }}</summary>
+        <p><strong>Date:</strong> {{ build.date }}</p>
 
-      <div style="padding-left: 1rem; margin-top: 0.5rem;">
-        {% for build in major.builds %}
-        <details>
-          <summary>{{ build.version }}</summary>
-          <p><strong>Date:</strong> {{ build.date }}</p>
+        {% if build.features %}
+        <h5>Features</h5>
+        <ul>
+          {% for item in build.features %}<li>{{ item }}</li>{% endfor %}
+        </ul>
+        {% endif %}
 
-          {% if build.features %}
-          <h5>Features</h5>
-          <ul>
-            {% for item in build.features %}<li>{{ item }}</li>{% endfor %}
-          </ul>
-          {% endif %}
+        {% if build.whats_new %}
+        <h5>What's New</h5>
+        <ul>
+          {% for item in build.whats_new %}<li>{{ item }}</li>{% endfor %}
+        </ul>
+        {% endif %}
 
-          {% if build.whats_new %}
-          <h5>What's New</h5>
-          <ul>
-            {% for item in build.whats_new %}<li>{{ item }}</li>{% endfor %}
-          </ul>
-          {% endif %}
+        {% if build.whats_fixed %}
+        <h5>What's Fixed</h5>
+        <ul>
+          {% for item in build.whats_fixed %}<li>{{ item }}</li>{% endfor %}
+        </ul>
+        {% endif %}
 
-          {% if build.whats_fixed %}
-          <h5>What's Fixed</h5>
-          <ul>
-            {% for item in build.whats_fixed %}<li>{{ item }}</li>{% endfor %}
-          </ul>
-          {% endif %}
+        {% if build.known_issues %}
+        <h5>Known Issues</h5>
+        <ul>
+          {% for item in build.known_issues %}<li>{{ item }}</li>{% endfor %}
+        </ul>
+        {% endif %}
 
-          {% if build.known_issues %}
-          <h5>Known Issues</h5>
-          <ul>
-            {% for item in build.known_issues %}<li>{{ item }}</li>{% endfor %}
-          </ul>
-          {% endif %}
-
-        </details>
-        {% endfor %}
-      </div>
-
-    </details>
+      </details>
+      {% endfor %}
     {% endfor %}
   </div>
 

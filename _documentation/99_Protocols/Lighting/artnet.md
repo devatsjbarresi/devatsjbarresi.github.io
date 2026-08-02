@@ -1,15 +1,17 @@
 ---
 layout: default
 title: Art-Net
-parent: Lighting
-grand_parent: Protocols
+parent: Protocols
+nav_order: 2
+permalink: /docs/art-net/
 has_toc: false
-# nav_order: 2
 ---
 
-# Art-Net
+<h1 align="center">Art-Net</h1>
 
-ShowShark groups **Art-Net** traffic under **Lighting > Art-Net**.
+---
+
+ShowShark recognises **Art-Net** traffic and surfaces useful lighting network fields in Wireshark.
 
 This dissector interprets Art-Net packets including:
 - ArtPoll and ArtPollReply for node discovery

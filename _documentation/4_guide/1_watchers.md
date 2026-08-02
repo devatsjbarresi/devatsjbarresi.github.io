@@ -2,7 +2,7 @@
 layout: default
 title: Watchers
 parent: Features
-nav_order: 10
+nav_order: 2
 permalink: /docs/watchers/
 ---
 
@@ -10,122 +10,87 @@ permalink: /docs/watchers/
 
 ---
 
-Watchers let you capture specific protocol values (for example DMX or OSC values) and expose them as ShowShark watcher columns so you can track how those values change over time.
-
-Use Watchers when you want to follow value progression across packets instead of manually opening packet details each time.
-
-{: .tip }
-> Watchers are intended to be part of normal analysis workflow: create a watcher, apply it, then add watcher columns to your packet list.
+Watchers let you capture specific DMX or OSC values and show them in custom columns in Wireshark's packet list. Each column shows the value carried by matching packets, making it easier to track changes to a specific DMX channel, OSC value or part of an OSC address across packets.
 
 ## Quick Start
 
-1. Open Wireshark and load a capture.
-2. Go to _Tools > ShowShark Tools > Watcher_.
-3. Add a watcher using **Add DMX Watcher** or **Add OSC Watcher**.
-4. Click **Apply Watcher**.
-5. Add watcher columns in Wireshark column preferences using custom fields like `show.watcher.1`, `show.watcher.2`, and so on.
-6. Review value progression directly in the packet list.
+1. Open an existing capture file or start a new capture and leave it running.
+2. Go to _Tools > 1 ShowShark Tools > 2 Watchers_.
+3. Click **Add DMX Watcher** or **Add OSC Watcher**.
+4. Click **Apply** to save the watcher configuration.
+5. Follow [Setting Up Columns](#setting-up-columns) to add the watcher field, such as `show.watcher.1`, to Wireshark's packet list.
+6. View the watcher values in the packet list.
 
-## Watcher Types (Current)
+## Watchers Window
 
-- Protocol/value watchers exposed by ShowShark internals.
-- DMX value tracking watchers.
-- OSC value tracking watchers.
+The Watchers window shows each watcher slot and its custom column field, such as `show.watcher.1`. Unused slots are left blank.
+
+<p align="center">
+  <img src="/assets/images/watchers/watcher_window.png" alt="ShowShark Watchers window with configured watcher examples"
+       style="width: 88%;">
+</p>
+
+## Applying Changes
+
+- **Apply:** Saves the watcher settings.
+- Adding, removing or changing the type of a watcher may require a plugin reload. ShowShark prompts you when needed.
+- **Revert:** Restores the last applied watcher settings.
+
+## Adding a DMX Watcher
+
+Click **Add DMX Watcher** and fill in the DMX value you want to track.
+
+| Field | Description |
+| ----- | ----------- |
+| **Protocol** | Choose `Any`, `sACN`, or `Art-Net`. `Any` matches the same universe and channel across both supported DMX protocols. |
+| **Universe Number** | The universe to watch. |
+| **Start Address** | The DMX channel to watch, from 1 to 512. |
+| **Bits** | Use `8` or `16`. 16-bit combines two consecutive DMX channels into one value. If left blank, ShowShark uses 8-bit. |
 
 {: .note }
-> Watchers are based on ShowShark-captured values that may not appear as normal default packet-dissector fields.
+> The format used for displayed DMX values, such as Percent, Decimal, or Hex, follows the **DMX Display** setting under _Tools > 4 ShowShark Options > 4 DMX Display_.
 
-## Detailed Workflow
+<p align="center" style="margin: 2rem 0 0.5rem;"><em>Example: sACN universe = 8, start = 1, bits = 16</em></p>
 
-## 1. Open Watcher Window
+<p align="center" style="margin: 0.5rem 0 2rem;">
+  <img src="/assets/images/watchers/dmx_watcher_sacn.png" alt="sACN watcher values shown as percentages"
+       style="width: 49%; border-radius: 10px; filter: drop-shadow(0 12px 22px rgba(0, 0, 0, 0.24));">
+</p>
 
-Open _Tools > ShowShark Tools > Watcher_ to launch the watcher editor.
+<p align="center" style="margin: 2rem 0 0.5rem;"><em>Example: Art-Net universe = 8, start = 1, bits = 8</em></p>
 
-## 2. Add Watchers
+<p align="center" style="margin: 0.5rem 0 2rem;">
+  <img src="/assets/images/watchers/dmx_watcher_artnet.png" alt="Art-Net watcher values shown as decimal values"
+       style="width: 49%; border-radius: 10px; filter: drop-shadow(0 12px 22px rgba(0, 0, 0, 0.24));">
+</p>
 
-Use the bottom-row watcher controls:
+## Adding an OSC Watcher
 
-- **Add DMX Watcher**
-- **Add OSC Watcher**
-- **Revert**
-- **Online Help**
-- **Apply Watcher**
-- **Close**
+Click **Add OSC Watcher** and enter an OSC address pattern. OSC watchers use two special characters:
 
-## 3. Apply Watchers
+- `*` matches any text at that position.
+- `#` marks the part of the address whose value you want to watch.
 
-After adding or editing watchers, click **Apply Watcher** so the active watcher list is used.
+For example, `/position/xyz/*/#/*` watches the value at the second-to-last segment of any matching address.
 
-## 4. Show Watchers in Columns
+OSC values are shown as their raw value.
 
-Open Wireshark column preferences and add **Custom** columns that point to watcher fields.
+<p align="center" style="margin: 2rem 0 0.5rem;"><em>Example: address = “/position/xyz/*/#/*”</em></p>
 
-Example field names:
+<p align="center" style="margin: 0.5rem 0 2rem;">
+  <img src="/assets/images/watchers/osc_watcher_values.png" alt="OSC watcher values shown in Wireshark's packet list"
+       style="width: 65%; border-radius: 10px; filter: drop-shadow(0 12px 22px rgba(0, 0, 0, 0.24));">
+</p>
 
-- `show.watcher.1`
-- `show.watcher.2`
-- `show.watcher.3`
+## Setting Up Columns
 
-{: .important }
-> Use dot index format (`show.watcher.1`) for watcher field names.
-
-## 5. Edit or Remove Watchers
-
-You can manually edit existing watcher entries or remove them from the Watcher window, then re-apply.
-
-## Output You Should Expect
-
-- Watcher values shown in packet-list columns.
-- Fast visual tracking of value progression across packets.
-
-## Practical Playbooks
-
-## DMX Progression Check
-
-1. Add a DMX watcher.
-2. Apply watchers.
-3. Add a `show.watcher.1` column.
-4. Sort or scan packets and verify progression patterns.
-
-Use this to confirm expected ramps, step changes, or stuck values.
-
-Example DMX watcher expression:
-
-- `show.sacn.dmx {universe = 1, channel = 1, bit_depth = 16}`
-
-## OSC Value Check
-
-1. Add an OSC watcher.
-2. Apply watchers.
-3. Add a `show.watcher.1` or `show.watcher.2` column.
-4. Verify incoming OSC value changes over time.
-
-Use this to confirm control data is updating as expected.
-
-## Screenshot Placeholders
-
-### Watcher Window Controls
-
-![Watcher window controls placeholder](/assets/images/placeholders/watchers-placeholder.svg)
-
-### Watcher List After Apply
-
-![Watcher list placeholder](/assets/images/placeholders/watchers-placeholder.svg)
-
-### Packet List with Watcher Columns
-
-![Watcher column placeholder](/assets/images/placeholders/watchers-placeholder.svg)
-
-## Current Limitations
-
-- No special caveats to call out beyond standard workflow.
-- Documentation examples will expand as more watcher types are added.
+Use [Configure Columns](/docs/columns/) to add a custom column for each watcher. Set **Type** to **Custom** and enter the field shown in the Watchers window, such as `show.watcher.1`. The column remains blank for packets that do not match the watcher.
 
 ---
 
 {::nomarkdown}
 <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-  <div><a href="/docs/capturing/">← Capturing</a></div>
-  <div style="text-align: right;"><a href="/docs/menus/">Menus →</a></div>
+  <div><a href="/docs/host-table/">← Host Table</a></div>
+  <div style="text-align: right;"><a href="/docs/filter-builder/">Filter Builder →</a></div>
 </div>
 {:/}

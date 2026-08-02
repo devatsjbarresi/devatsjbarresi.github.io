@@ -48,6 +48,75 @@
     background-color: rgba(76, 175, 80, 0.05) !important;
     color: #6db571 !important;
   }
+
+  /* Compact, borderless menu reference tables */
+  table.menu-reference {
+    display: table;
+    width: auto;
+    min-width: 0;
+    margin: 0;
+    border: 0;
+    border-collapse: collapse;
+    font-size: 1rem !important;
+  }
+
+  table.menu-reference td {
+    min-width: 0;
+    padding: 0.12rem 0.5rem 0.12rem 0;
+    border: 0;
+    background: transparent;
+    vertical-align: baseline;
+    font-size: 1rem !important;
+  }
+
+  table.menu-reference .menu-number {
+    width: 1.5rem;
+    text-align: right;
+  }
+
+  table.menu-reference .menu-name {
+    width: 6.5rem;
+    white-space: nowrap;
+  }
+
+  table.menu-reference.about-reference .menu-name {
+    width: 12rem;
+  }
+
+  table.menu-reference tr.menu-subitem td {
+    position: relative;
+    left: 1rem;
+  }
+
+  .menu-reference-container .table-wrapper {
+    margin: 0.35rem 0 0.5rem 0.5rem;
+    box-shadow: none;
+  }
+
+  .menu-reference-container + h2 {
+    margin-top: 1rem;
+  }
+
+  .compact-filter-example {
+    display: inline-block;
+    margin: 0.25rem 0;
+    padding: 0.3rem 0.55rem;
+    border-radius: 4px;
+    background: #f5f6fa;
+  }
+
+  .compact-filter-example code {
+    padding: 0;
+    background: transparent;
+  }
+
+  .compact-filter-example + h2 {
+    margin-top: 1rem;
+  }
+
+  main h2 {
+    margin-bottom: 1rem !important;
+  }
 </style>
 
 <!-- Logo size override -->

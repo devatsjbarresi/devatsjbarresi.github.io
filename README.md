@@ -1,10 +1,5 @@
 # ShowShark
 
-Welcome to **ShowShark**, the Wireshark post-dissector for entertainment networking (sACN, Art-Net, RDMnet, OSC).
-
-This is a temporary placeholder file to allow Jekyll to build locally.
-# ShowShark
-
 Welcome to **ShowShark**, the advanced Wireshark post-dissector designed for entertainment networking analysis.  
 ShowShark provides intelligent insights into lighting, media, and show control protocols such as **sACN**, **Art-Net**, **RDMnet**, and **OSC** — all in a familiar Wireshark environment.
 
@@ -22,6 +17,16 @@ ShowShark extends Wireshark’s native protocol support to decode and enrich tra
 - 🌐 **Entertainment Multicast Awareness** – Recognises lighting and show-control traffic automatically.
 - 📊 **Diagnostics Mode** – Displays IGMP queriers, multicast join behaviour, and timing data.
 - ⚙️ **Customisable Output** – Enable or disable debug modes and select your own column formatting.
+
+### ShowSquid Companion App
+
+**ShowSquid** is a desktop companion app that prompts devices to communicate so ShowShark has more traffic to analyse. Select one or more network interfaces, enable the required protocol groups, and start a session to monitor live TX and RX activity for sACN, Art-Net, manufacturer-specific multicast, PSN, and other supported protocols.
+
+<p align="center">
+  <img src="assets/images/showsquid/showsquid_essential_started.png" alt="ShowSquid Essential mode running with live protocol activity indicators" width="70%">
+</p>
+
+See the [ShowSquid documentation](https://showshark.net/docs/showsquid/) for setup instructions, protocol options, and Advanced mode.
 
 ---
 
