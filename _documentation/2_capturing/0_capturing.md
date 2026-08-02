@@ -1,50 +1,63 @@
 ---
 layout: default
 title: Capturing
-nav_order: 3
-has_children: true
-nav_fold: false
+parent: Guide
+nav_order: 5
 permalink: /docs/capturing/
 ---
 
 <h1 align="center">Capturing Network Traffic</h1>
 
 ---
-Wireshark captures network packets as they travel across your network interface. ShowShark then analyses the captured data to provide entertainment network-specific insights.
-The more packets you capture, the more complete ShowShark's analysis becomes, but on the flip side, larger captures require more processing time.
+Wireshark captures network packets as they pass through your selected network interface. ShowShark analyses the captured data for entertainment-specific information. Capturing more packets gives ShowShark more to analyse, but larger captures take longer to process.
 
 {: .note }
-> Future documentation will include more detailed ShowShark and entertainment-specific capture guidance, with examples and screenshots. In the meantime, the official Wireshark documentation is a great resource for learning effective capture workflows.
+> The ShowShark download includes an example capture file you can open in Wireshark if you do not have live network traffic to capture.
 
-## Very Quick Capture Steps
+## Quick Capture Steps
 
-1. **Choose the Interface** - On opening Wireshark, select the interface where your entertainment traffic is flowing (Wi-Fi, Ethernet, etc.).
-	*See*: [Wireshark: Capture Interfaces](https://www.wireshark.org/docs/wsug_html_chunked/ChCapInterfaceSection.html)
+1. **Choose the interface:** Select the network interface carrying your entertainment traffic, such as Ethernet or Wi-Fi. See [Capture Interfaces](https://www.wireshark.org/docs/wsug_html_chunked/ChCapInterfaceSection.html).
+2. **Start the capture:** Start capturing and let it run long enough to collect a useful sample. See the [Wireshark toolbar](https://www.wireshark.org/docs/wsug_html_chunked/ChUseMainToolbarSection.html).
+3. **Stop the capture:** Stop capturing when you have the traffic you need.
+4. **Open the Host Table:** Go to _Tools > 1 ShowShark Tools > 1 Host Table_ to view discovered devices. See [Host Table](/docs/host-table/).
+5. **Explore the traffic:** Browse the [packet list](https://www.wireshark.org/docs/wsug_html_chunked/ChUsePacketListPaneSection.html) and [packet details](https://www.wireshark.org/docs/wsug_html_chunked/ChUsePacketDetailsPaneSection.html). Use display filters or the ShowShark [Filter Builder](/docs/filter-builder/) to focus on specific traffic.
+6. **Save the capture:** Go to _File > Save As_ to keep it for later analysis.
 
-2. **Start the Capture** - Press the green "Start capturing" button and let the capture run for long enough to see a representative sample (often ~1 minute is plenty).
-	*See*: [Wireshark: Main Toolbar](https://www.wireshark.org/docs/wsug_html_chunked/ChUseMainToolbarSection.html)
+## What You Will See
 
-3. **Stop the Capture** - Click the red square button to stop capturing.
+Without special switch configuration, you can still capture useful traffic, including:
 
-4. **Open Host Table** - View discovered devices via _Tools > ShowShark > Host Table_.
-	*See*: [Host Table](/docs/host-table/)
+- **Broadcast traffic** sent to everyone, such as discovery packets and broadcast Art-Net.
+- **Multicast traffic** that your capture machine has joined, such as sACN.
+- **Packets to or from your own machine**.
 
-5. **Explore** - Browse the packet list and packet details panes, and try different column layouts.
-	You can also try display filters (including via ShowShark's [Filter Builder](/docs/filter-builder/)) to focus on specific traffic types.
-	*See*: [Wireshark: Packet List Pane](https://www.wireshark.org/docs/wsug_html_chunked/ChUsePacketListPaneSection.html), [Wireshark: Packet Details Pane](https://www.wireshark.org/docs/wsug_html_chunked/ChUsePacketDetailsPaneSection.html), and [Wireshark: Display Filter Toolbar](https://www.wireshark.org/docs/wsug_html_chunked/ChUseFilterToolbarSection.html)
+Protocols such as sACN and PSN are predominantly multicast, so your capture machine may need to join the relevant multicast groups before those streams are forwarded to it.
 
-6. **Save Important Captures** - Use _File > Save As_ to keep capture files for later analysis.
+[ShowSquid](/docs/showsquid/) prompts devices to communicate and joins selected multicast groups, giving Wireshark more traffic to capture and ShowShark more information to analyse.
 
-## Other Resources
+## What You Might Not See
 
-See [ShowShark Resources](/docs/resources/)
+Some traffic will not appear in a normal capture on a switched network:
+
+- **Unicast traffic between two other devices**: the switch sends packets directly between those devices, so they are not forwarded to your machine.
+- **Multicast streams not joined by your capture machine**.
+- **Traffic on other VLANs or subnets** that never reaches your capture port.
+
+{: .note }
+> If you need to see traffic between two other devices, or traffic that would otherwise be filtered before reaching your machine, configure your switch to copy that traffic to your capture port. This is usually called port mirroring or SPAN. See your switch manufacturer's documentation for setup instructions.
+
+{: .note }
+> You can also use a TAP device between devices. This can be simpler, but it requires extra hardware and may mean altering your network setup.
+
+## Explore ShowShark's Features
+
+See the [Features](/docs/features/) section to find out more about the ShowShark tools available to help you inspect your network.
 
 ---
 
 {::nomarkdown}
 <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-	<div><a href="/docs/setup/configuration-profile/">← Configuration Profile</a></div>
-	<div style="text-align: right;"><a href="/docs/analysing/">Analysing →</a></div>
+	<div><a href="/docs/columns/">← Configure Columns</a></div>
+	<div style="text-align: right;"><a href="/docs/features/">Features →</a></div>
 </div>
 {:/}
-

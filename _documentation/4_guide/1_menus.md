@@ -2,7 +2,7 @@
 layout: default
 title: Menus
 parent: Guide
-nav_order: 20
+nav_order: 3
 nav_fold: false
 permalink: /docs/menus/
 ---
@@ -11,68 +11,108 @@ permalink: /docs/menus/
 
 ---
 
+ShowShark adds five menu groups under Wireshark's _Tools_ menu.
+
+## Menu Structure
+
+1. **[Tools](#1-tools)**
+2. **[Filter Builder](#2-filter-builder)**
+3. **[Displays](#3-displays)**
+4. **[Options](#4-options)**
+5. **[ShowShark](#5-showshark)**
+
 {: .note }
-> **Tip:** When experimenting with settings, use a small capture file. Wireshark re-processes the entire capture whenever a setting changes, so the larger the file, the longer the wait.
+> Some changes require Wireshark to reload packets. ShowShark will warn you when this is needed.
 
-ShowShark adds a menu under _Tools > ShowShark_ in Wireshark, making it easy to access plugin features and settings.
+## 1. Tools
 
-<p align="center">
-  <img src="/assets/images/menus_overrview.png" alt="ShowShark Menu Overview"
-       style="width: 65%;">
-</p>
+{::nomarkdown}
+<div class="menu-reference-container">
+<table class="menu-reference">
+  <tbody>
+    <tr><td class="menu-number">1.</td><td class="menu-name"><strong>Host Table</strong></td><td>Opens the <a href="/docs/host-table/">Host Table</a> window.</td></tr>
+    <tr><td class="menu-number">2.</td><td class="menu-name"><strong>Watchers</strong></td><td>Opens the <a href="/docs/watchers/">Watchers</a> editor.</td></tr>
+  </tbody>
+</table>
+</div>
+{:/}
 
-## 1. User Level
+## 2. Filter Builder
 
-ShowShark offers two display levels:
+These options use the [Filter Builder](/docs/filter-builder/) to create Wireshark display filters without typing the full filter syntax manually.
 
-### Essential
+{::nomarkdown}
+<div class="menu-reference-container">
+<table class="menu-reference">
+  <tbody>
+    <tr><td class="menu-number">1.</td><td class="menu-name"><strong>Clear Filter</strong></td><td>Clears the current display filter.</td></tr>
+    <tr><td class="menu-number">2.</td><td class="menu-name"><strong>Host Filter Window</strong></td><td>Opens the Host Filter editor to build filters using hostnames, IP addresses, or MAC addresses.</td></tr>
+    <tr><td class="menu-number">3.</td><td class="menu-name"><strong>Manufacturer</strong></td><td>Adds a filter for the selected device manufacturer.</td></tr>
+    <tr><td class="menu-number">4.</td><td class="menu-name"><strong>Protocol</strong></td><td>Options for adding protocol filters.</td></tr>
+    <tr><td class="menu-number">5.</td><td class="menu-name"><strong>Watcher</strong></td><td>Adds a filter for configured <a href="/docs/watchers/">Watchers</a>.</td></tr>
+  </tbody>
+</table>
+</div>
+{:/}
 
-Essential is the default display level, designed to provide a clean and simple view of the most important information to get you started.
+## 3. Displays
 
-### Advanced
-
-Advanced provides a more detailed view with additional details and information.
-
-## 2. Displays
-
-The Displays submenu provides quick access to display settings.
-
-The first option resets the packet list columns to the ShowShark defaults (currently tailored toward lighting). You can customise these at any time. See the [Columns](/docs/columns/) page for more detail.
-
-There are also three colour filter options to help visually distinguish different types of traffic. Colour filters are purely cosmetic; pick whichever you find most readable.
-
-## 3. Show Host Table
-
-This opens the Host Table window, displaying all discovered devices and their properties. See the [Host Table](/docs/host-table/) page for more detail.
+{::nomarkdown}
+<div class="menu-reference-container">
+<table class="menu-reference">
+  <tbody>
+    <tr><td class="menu-number">1.</td><td class="menu-name"><strong>Colour Filters</strong></td><td></td></tr>
+    <tr class="menu-subitem"><td class="menu-number">1.</td><td class="menu-name"><strong>Colour Filter 1</strong></td><td>Applies colour filter set 1.</td></tr>
+    <tr class="menu-subitem"><td class="menu-number">2.</td><td class="menu-name"><strong>Colour Filter 2</strong></td><td>Applies colour filter set 2.</td></tr>
+    <tr class="menu-subitem"><td class="menu-number">3.</td><td class="menu-name"><strong>Colour Filter 3</strong></td><td>Applies colour filter set 3.</td></tr>
+    <tr><td class="menu-number">2.</td><td class="menu-name"><strong>Column Layout</strong></td><td></td></tr>
+    <tr class="menu-subitem"><td class="menu-number">1.</td><td class="menu-name"><strong>Lighting</strong></td><td>Applies the ShowShark lighting <a href="/docs/columns/">column layout</a>.</td></tr>
+  </tbody>
+</table>
+</div>
+{:/}
 
 ## 4. Options
 
-This opens the Options dialog where you can configure various ShowShark settings. You can't break anything from this window; however, most of the useful settings can be accessed from the menus anyway.
+These options control ShowShark's behaviour and display preferences. They can also be edited in the ShowShark Options window.
 
-The dialog gives explanations of each setting and the options available.
+{::nomarkdown}
+<div class="menu-reference-container">
+<table class="menu-reference">
+  <tbody>
+    <tr><td class="menu-number">0.</td><td class="menu-name"><strong>Options Window</strong></td><td>Opens the ShowShark Options window.</td></tr>
+    <tr><td class="menu-number">1.</td><td class="menu-name"><strong>User Level</strong></td><td>Selects Essential or Advanced mode.</td></tr>
+    <tr><td class="menu-number">2.</td><td class="menu-name"><strong>Hosts</strong></td><td>Selects whether ShowShark displays only hosts identified as entertainment devices or all hosts on the network.</td></tr>
+    <tr><td class="menu-number">3.</td><td class="menu-name"><strong>Sort By</strong></td><td>Selects how hosts are sorted throughout ShowShark: IP address, hostname, or MAC address.</td></tr>
+    <tr><td class="menu-number">4.</td><td class="menu-name"><strong>DMX Display</strong></td><td>Selects how DMX values are displayed throughout ShowShark: percent, decimal, hexadecimal, or not shown.</td></tr>
+    <tr><td class="menu-number">5.</td><td class="menu-name"><strong>Attach Host Protocol Table</strong></td><td>Shows or hides the host protocol table in each packet dissection.</td></tr>
+    <tr><td class="menu-number">6.</td><td class="menu-name"><strong>Attach Host Property Table</strong></td><td>Shows or hides the host property table in each packet dissection.</td></tr>
+    <tr><td class="menu-number">7.</td><td class="menu-name"><strong>Show About Dialog on Startup</strong></td><td>Selects whether the About dialog appears when ShowShark starts.</td></tr>
+  </tbody>
+</table>
+</div>
+{:/}
 
-## 5. Open Plugin Folder
+## 5. ShowShark
 
-This opens the folder where any additional files for ShowShark live (this may be empty).
-
-## 6. Reload Wireshark Plugins
-
-This reloads all Lua plugins in Wireshark without restarting the application. You'll mainly need this when updating ShowShark.
-
-## 7. Visit ShowShark Website
-
-Come here!
-
-## 8. About ShowShark
-
-This displays information about the current ShowShark version, including release notes.
+{::nomarkdown}
+<div class="menu-reference-container">
+<table class="menu-reference">
+  <tbody>
+    <tr><td class="menu-number">1.</td><td class="menu-name"><strong>Reload Wireshark Plugins</strong></td><td>Reloads Lua plugins in Wireshark.</td></tr>
+    <tr><td class="menu-number">2.</td><td class="menu-name"><strong>Visit ShowShark Website</strong></td><td>Opens the <a href="/">ShowShark website</a>.</td></tr>
+    <tr><td class="menu-number">3.</td><td class="menu-name"><strong>About ShowShark</strong></td><td>Opens the About dialog.</td></tr>
+    <tr><td class="menu-number">4.</td><td class="menu-name"><strong>Check for Updates</strong></td><td>Checks whether a newer version of ShowShark is available.</td></tr>
+  </tbody>
+</table>
+</div>
+{:/}
 
 ---
 
 {::nomarkdown}
 <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-  <div><a href="/docs/capturing/">← Capturing</a></div>
+  <div><a href="/docs/configuration-profile/">← Configuration Profile</a></div>
   <div style="text-align: right;"><a href="/docs/columns/">Configure Columns →</a></div>
 </div>
 {:/}
-

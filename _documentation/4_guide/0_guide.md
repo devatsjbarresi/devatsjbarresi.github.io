@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Guide
-nav_order: 4
+nav_order: 1
 has_children: true
+has_toc: false
 nav_fold: false
 permalink: /docs/guide/
 ---
@@ -11,17 +12,27 @@ permalink: /docs/guide/
 
 ---
 
-This section groups ShowShark tools and workflows in one place, so new pages can be added without changing the overall documentation structure.
+Get ShowShark installed and configure Wireshark for capturing and analysing entertainment network traffic.
 
-## Current Guide Modules
+{::nomarkdown}
+<div class="menu-reference-container">
+<table class="menu-reference about-reference">
+  <tbody>
+    <tr><td class="menu-name"><a href="/docs/installation/">Installation</a></td><td>Install Wireshark and ShowShark.</td></tr>
+    <tr><td class="menu-name"><a href="/docs/configuration-profile/">Configuration Profile</a></td><td>Enable the ShowShark profile in Wireshark.</td></tr>
+    <tr><td class="menu-name"><a href="/docs/menus/">Menus</a></td><td>Find ShowShark's tools and settings in Wireshark.</td></tr>
+    <tr><td class="menu-name"><a href="/docs/columns/">Configure Columns</a></td><td>Choose and arrange the information shown in the packet list.</td></tr>
+    <tr><td class="menu-name"><a href="/docs/capturing/">Capturing</a></td><td>Capture network traffic for ShowShark to analyse.</td></tr>
+  </tbody>
+</table>
+</div>
+{:/}
 
-- [Menus](/docs/menus/) - Access points for ShowShark tools and settings.
-- [Configure Columns](/docs/columns/) - Customise packet-list columns for your workflow.
+---
 
-## Features
-
-Feature-specific tools are documented in the [Features](/docs/features/) section.
-
-## Planned Modules
-
-As ShowShark grows, new guide pages will be added here without changing existing links.
+{::nomarkdown}
+<div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+  <div><a href="/download/">← Download</a></div>
+  <div style="text-align: right;"><a href="/docs/installation/">Installation →</a></div>
+</div>
+{:/}

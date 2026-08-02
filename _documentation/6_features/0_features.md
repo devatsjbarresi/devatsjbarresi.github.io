@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Features
-nav_order: 5
+nav_order: 2
 has_children: true
+has_toc: false
 nav_fold: false
 permalink: /docs/features/
 ---
@@ -11,15 +12,25 @@ permalink: /docs/features/
 
 ---
 
-This section covers ShowShark feature-specific tools and how to use them.
+ShowShark includes tools for exploring captured hosts, monitoring specific values and building display filters.
 
-## Current Features
+{::nomarkdown}
+<div class="menu-reference-container">
+<table class="menu-reference">
+  <tbody>
+    <tr><td class="menu-name"><a href="/docs/host-table/">Host Table</a></td><td>View hosts discovered in the capture and the information ShowShark has identified about them.</td></tr>
+    <tr><td class="menu-name"><a href="/docs/watchers/">Watchers</a></td><td>Monitor specific DMX or OSC values as they change across packets.</td></tr>
+    <tr><td class="menu-name"><a href="/docs/filter-builder/">Filter Builder</a></td><td>Build Wireshark display filters without memorising syntax.</td></tr>
+  </tbody>
+</table>
+</div>
+{:/}
 
-- [ShowSquid](/docs/showsquid/) - Companion app for protocol discovery and live monitoring workflows.
-- [Watchers](/docs/watchers/) - Build and manage watcher rules for recurring checks.
-- [Host Table](/docs/host-table/) - View discovered hosts, properties, and observed protocols.
-- [Filter Builder](/docs/filter-builder/) - Build Wireshark display filters without memorising syntax.
+---
 
-## Planned Features
-
-Additional feature pages will be added here as ShowShark grows.
+{::nomarkdown}
+<div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+  <div><a href="/docs/capturing/">← Capturing</a></div>
+  <div style="text-align: right;"><a href="/docs/host-table/">Host Table →</a></div>
+</div>
+{:/}

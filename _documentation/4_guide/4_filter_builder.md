@@ -2,7 +2,7 @@
 layout: default
 title: Filter Builder
 parent: Features
-nav_order: 50
+nav_order: 3
 permalink: /docs/filter-builder/
 ---
 
@@ -10,67 +10,64 @@ permalink: /docs/filter-builder/
 
 ---
 
-## What are Filters?
+<style>
+  .main-content img[src^="/assets/images/filter_builder/"] {
+    display: block;
+    margin: 2rem auto;
+  }
+</style>
 
-Filters in Wireshark allow you to narrow down the packets displayed to only those that match specific criteria. Instead of viewing thousands of packets, you can focus on specific hosts, protocols, manufacturers, or other characteristics. ShowShark's filter builder makes it easy to create these filters without needing to memorize Wireshark's filter syntax.
+[Wireshark display filters](https://www.wireshark.org/docs/wsug_html_chunked/ChWorkBuildDisplayFilterSection.html) allow you to show only the packets you want to see and hide the rest, but building them can be cumbersome and requires you to remember the filter syntax.
 
-Filters are temporary and non-destructive—they only change what you see, not what's in your capture file. You can apply, remove, or modify filters at any time.
+ShowShark’s Filter Builder allows you to create custom filters for hosts, manufacturers, protocols and [Watchers](/docs/watchers/) without requiring you to write the syntax by hand.
+
+## Getting Started
+
+1. Start a new capture, open an existing capture, or use the example capture included with the ShowShark download.
+2. Open the Filter Builder from _Tools > 2 ShowShark Filter Builder_.
+
+<img src="/assets/images/filter_builder/filter_builder_menu.png" alt="ShowShark Filter Builder menu" style="width: 55%;">
+
+1. **Clear Filter:** Removes the current display filter.
+2. **Host Filter Window:** Opens the [Host Filter Window](#host-filters) for building filters using hostnames, IP addresses and MAC addresses.
+3. **Manufacturer:** Adds a filter for a selected [manufacturer](#manufacturer-filters).
+4. **Protocol:** Adds a filter for a selected [protocol](#protocol-filters).
+5. **Watcher:** Adds a filter for configured [Watchers](/docs/watchers/).
+
+### Combining Filters
+
+- Filters from different categories are combined using ***and***.
+- Multiple selections within the same category are combined using ***or***.
 
 {: .note }
-> Filters can take longer to apply on large capture files. Be patient when applying complex filters to captures with millions of packets.
-
-## Filter Builder Overview
-
-ShowShark includes a filter builder under _Tools > ShowShark Filter Builder..._ to help create Wireshark display filters without needing to know the full filter syntax.
-
-{: .tip }
-> If you don't have a capture to hand, open the example capture file from the ShowShark download zip in Wireshark to try out the Filter Builder.
-
-The filter builder works with your **current display filter** and does not automatically apply changes. You must apply the filter manually in Wireshark by pressing Enter or clicking the Apply button.
-
-### How the Filter Builder Works
-
-The filter builder adds conditions to the existing display filter rather than replacing it. This allows you to build complex filters step by step:
-
-- **New conditions** are combined with existing filters using ***and***
-- **Multiple selections** within the same category are grouped using ***or***
-- The resulting filter is written to the **display filter bar** for review or further editing
-- Filters are **not automatically applied**—you must apply them manually in Wireshark
-
-**Pro Tip:** The filter builder is great for learning Wireshark's filter syntax. Build a filter visually, then examine the generated syntax in the display filter bar to understand how it works.
+> Filters may take longer to apply to large captures.
 
 ---
 
 ## Host Filters
 
-The **Host Filters** option is the first menu item and opens a window for building filters based on source and destination hosts. This is one of the most commonly used filtering options.
+Host Filter Window builds filters using source and destination host information.
 
-**To access Host Filters:**
+Build host filters using:
 
-Go to _Tools > ShowShark Filter Builder..._ in Wireshark:
-
-<p align="center">
-  <img src="/assets/images/filter_builder/builder_host_eos.png" alt="Opening Host Filter Builder"
-       style="width: 75%;">
-</p>
-
-### How Host Filters Work
-
-The Host Filter window allows you to filter packets based on:
-- **Host names** (device names detected by ShowShark)
-- **IP addresses** (individual, ranges, or comma-separated lists)
-- **MAC addresses** (full or partial addresses)
+<div class="menu-reference-container">
+<table class="menu-reference">
+  <tbody>
+    <tr><td class="menu-name"><strong>Hostnames</strong></td><td>Device names detected by ShowShark.</td></tr>
+    <tr><td class="menu-name"><strong>IP addresses</strong></td><td>Individual addresses, ranges or comma-separated lists.</td></tr>
+    <tr><td class="menu-name"><strong>MAC addresses</strong></td><td>Full or partial addresses.</td></tr>
+  </tbody>
+</table>
+</div>
 
 You can specify criteria for **source hosts**, **destination hosts**, or both:
 
 - Within the same field, multiple values are combined using ***or***
 - Between different fields (source vs. destination), filters are combined using ***and***
 
-### Host Name Filtering
+### Hostname Filtering
 
-Host names use **contains** matching, which means the filter will match any host whose name contains the text you enter. You can enter multiple host names separated by commas.
-
-**Example:** Filtering for EOS consoles:
+The filter matches any hostname containing the text you enter. Matching is case-sensitive, and you can separate multiple entries with commas.
 
 <p align="center">
   <img src="/assets/images/filter_builder/builder_host_eos_response.png" alt="EOS Host Filter Response"
@@ -79,7 +76,7 @@ Host names use **contains** matching, which means the filter will match any host
 
 ### IP Address Filtering
 
-IP addresses can be specified in several ways:
+You can filter by a single IP address, a range or multiple addresses.
 
 **Single IP address:**
 
@@ -90,16 +87,16 @@ IP addresses can be specified in several ways:
 
 **IP address range:**
 
-Use the format `10.101.10.6–10.101.10.9` to specify a range:
+Enter the first and last address in the range, for example `10.101.10.6–10.101.10.9`.
 
 <p align="center">
   <img src="/assets/images/filter_builder/builder_host_range_ip.png" alt="IP Range Filter"
        style="width: 75%;">
 </p>
 
-**Complex IP filtering:**
+**Multiple IP addresses:**
 
-Combine individual IPs, ranges, and comma-separated lists:
+Combine individual addresses and ranges, separated by commas.
 
 <p align="center">
   <img src="/assets/images/filter_builder/builder_host_complex_ip.png" alt="Complex IP Filter"
@@ -108,43 +105,34 @@ Combine individual IPs, ranges, and comma-separated lists:
 
 ### MAC Address Filtering
 
-MAC addresses support **contains** matching, comma-separated values, and partial MAC fragments. This is useful when you know the manufacturer portion of the MAC address or want to filter by partial matches.
+Enter a full or partial MAC address. You can separate multiple entries with commas.
 
 <p align="center">
   <img src="/assets/images/filter_builder/builder_host_mac.png" alt="MAC Address Filter"
        style="width: 75%;">
 </p>
 
-### Complex Host Filters
+### Combining Host Filters
 
-You can combine multiple host filter criteria to create sophisticated filters. Here's an example of a complex filter using multiple fields:
+You can combine hostname, IP address and MAC address filters across the source and destination fields.
 
 <p align="center">
   <img src="/assets/images/filter_builder/builder_host_big_filter.png" alt="Complex Host Filter Example"
        style="width: 90%;">
 </p>
 
-**Remember:** The same filtering rules apply to both source and destination host fields. When applied, the generated filter is written to the display filter bar and can be edited manually.
-
 ---
 
 ## Manufacturer Filters
 
-The **Manufacturer** option opens a list of manufacturers that can be added to the display filter. This allows you to filter packets based on the device manufacturer, which ShowShark determines from MAC addresses.
-
-**To access Manufacturer Filters:**
+Manufacturer filters show traffic to or from devices that ShowShark has identified as the selected manufacturer.
 
 <p align="center">
   <img src="/assets/images/filter_builder/builder_menu_manu.png" alt="Opening Manufacturer Filter"
        style="width: 75%;">
 </p>
 
-### How Manufacturer Filters Work
-
-When you select a manufacturer:
-- If **no manufacturer is currently selected**, it's added to the current filter using ***and***
-- If **multiple manufacturers** are selected, they are grouped together using ***or***
-- The filter matches either the **source or destination** host manufacturer
+Selected manufacturers appear in Wireshark’s display filter bar.
 
 <p align="center">
   <img src="/assets/images/filter_builder/builder_filter_manu.png" alt="Manufacturer Filter Selection"    
@@ -152,77 +140,21 @@ When you select a manufacturer:
 </p>
 
 {: .warning }
-> **Known Issue:** Manufacturer filters may require manual editing of the display filter bar. See [Manual Editing](#manual-editing-of-filter-bar) below for guidance.
-
-Manufacturers can be removed by manually editing the display filter bar. See the [Manual Editing](#manual-editing-of-filter-bar) section below.
+> Manually editing manufacturer filters in the display filter bar may not update the Filter Builder correctly. See [Manual Editing](#manual-editing).
 
 ---
 
 ## Protocol Filters
 
-The **Protocol** option opens a list of protocols that can be added to the display filter. This is useful for focusing on specific network protocols used in entertainment networks.
-
-**To access Protocol Filters:**
+The Protocol menu includes entertainment and general network protocols, with submenus for more specific options such as DMX and OSC.
 
 <p align="center">
   <img src="/assets/images/filter_builder/builder_menu_protocols.png" alt="Protocol Filter Menu"
        style="width: 75%;">
 </p>
 
-### How Protocol Filters Work
-
-When you select a protocol:
-- If **no protocol is currently selected**, it's added to the current filter using ***and***
-- If **multiple protocols** are selected, they are grouped together using ***or***
-- Some protocols (such as DMX) include **sub-menus** that allow more specific protocol variants to be selected
-
 {: .warning }
-> **Known Issue:** Protocol filters may require manual editing of the display filter bar. See [Manual Editing](#manual-editing-of-filter-bar) below for guidance.
-
-**Tip:** When using protocol filters, start with broader protocol categories and narrow down using the sub-menus for more specific filtering.
-
-Protocols can be removed by manually editing the display filter bar. See the [Manual Editing](#manual-editing-of-filter-bar) section below.
-
----
-
-## Manual Editing of Filter Bar
-
-All filters generated by the filter builder appear in Wireshark's display filter bar and can be manually edited or refined as needed. This is particularly useful when:
-- The filter builder produces unexpected results
-- You need more precise control over filter logic
-- You're working around known bugs in manufacturer or protocol filters
-
-You can always edit the generated filter directly in the display filter bar. The filter builder provides a good starting point that you can refine manually.
-
-### Editing Filters
-
-**To clear the filter:**
-- Click the **X** button on the right side of the display filter bar, or
-- Select all text in the filter bar and delete it, or  
-- Use the keyboard shortcut `Cmd+A` then `Delete` (macOS) or `Ctrl+A` then `Delete` (Windows/Linux)
-
-**Tips for manual editing:**
-- Filters use logical operators: `and`, `or`, `not`
-- Use parentheses `()` to group conditions and control precedence
-- Wireshark will highlight syntax errors in red if your manual edits are invalid
-- The filter builder provides valid syntax that you can study and modify
-- You can combine filter builder output with hand-written filters
-
-### Common Manual Edit Scenarios
-
-**Removing a condition:** Delete the unwanted portion and the connecting `and` or `or` operator.
-
-**Adding negation:** Use `not` or `!` before a condition to exclude it. For example: `not tcp.port == 80`
-
-**Changing operators:** Replace `and` with `or` (or vice versa) to change filter logic.
-
-**Refining ranges:** Manually adjust IP ranges or port numbers that the filter builder created.
-
----
-
-## Examples
-
-Here are some examples of filters created with the filter builder:
+> Manually editing protocol filters in the display filter bar may not update the Filter Builder correctly. See [Manual Editing](#manual-editing).
 
 ### sACN Protocol Filter
 
@@ -240,10 +172,21 @@ Here are some examples of filters created with the filter builder:
 
 ---
 
+## Manual Editing
+
+You can use the syntax that Filter Builder creates as a starting point and edit it directly when you need more control over the filter logic or need to work around a known issue.
+
+Click in the display filter bar to edit the filter. You can remove conditions, change `and` to `or`, or edit IP ranges, port numbers and hostnames. Press Enter to apply the filter. Wireshark highlights invalid filters in red.
+
+To clear the display filter bar, click the **X** on the right, or delete all the text and press Enter.
+
+See [Common Filters](/docs/common-filters/) for more filter examples.
+
+---
+
 {::nomarkdown}
 <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-  <div><a href="/docs/columns/">← Configure Columns</a></div>
-  <div style="text-align: right;"><a href="/docs/resources/">Resources →</a></div>
+  <div><a href="/docs/watchers/">← Watchers</a></div>
+  <div style="text-align: right;"><a href="/docs/showsquid/">ShowSquid →</a></div>
 </div>
 {:/}
-

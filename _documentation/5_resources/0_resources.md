@@ -1,9 +1,7 @@
 ---
 layout: default
 title: Resources
-nav_order: 8
-has_children: true
-nav_fold: false
+nav_order: 5
 permalink: /docs/resources/
 ---
 
@@ -11,7 +9,7 @@ permalink: /docs/resources/
 
 ---
 
-A shortlist of external references used throughout the ShowShark documentation.
+Useful links for learning more about Wireshark, networking and entertainment protocols.
 
 ## Wireshark
 
@@ -22,13 +20,9 @@ A shortlist of external references used throughout the ShowShark documentation.
 - [Packet List Pane](https://www.wireshark.org/docs/wsug_html_chunked/ChUsePacketListPaneSection.html)
 - [Packet Details Pane](https://www.wireshark.org/docs/wsug_html_chunked/ChUsePacketDetailsPaneSection.html)
 
-## Glossaries
-
-- [Computer Hope - Networking Terms](https://www.computerhope.com/jargon/n/network.htm)
-
 ## ETC Resources
 
-Note that ShowShark is independent and is not associated with other entities including ETC, however they do provide some great resources on networking and entertainment protocols.
+ShowShark is independent and is not affiliated with ETC. ETC provides some useful resources covering networking and entertainment protocols.
 
 - [Wireshark - Setup and Background Info](https://support.etcconnect.com/ETC/Networking/General/Wireshark_-_Setup_and_Background_Info)
 - [Network Definitions](https://support.etcconnect.com/ETC/Networking/General/Network_Definitions)
@@ -40,8 +34,7 @@ Note that ShowShark is independent and is not associated with other entities inc
 
 {::nomarkdown}
 <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-  <div><a href="/docs/filter-builder/">← Filter Builder</a></div>
-  <div style="text-align: right;"></div>
+  <div><a href="/docs/showsquid/advanced-mode/">← Advanced Mode</a></div>
+  <div style="text-align: right;"><a href="/docs/reference/">Reference →</a></div>
 </div>
 {:/}
-
