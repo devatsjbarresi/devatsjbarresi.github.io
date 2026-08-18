@@ -1,11 +1,11 @@
 {
-  "version": "1.0.BETA5",
-  "date": "July 2026",
+  "version": "1.0",
+  "date": "August 2026",
   "download_url": "https://showshark.net/download/",
-  "showshark_message": "What's changed:\n\n• mDNS and OSC support\n• DMX and OSC Watchers\n• Host Table and Filter Builder improvements\n\nThis update is recommended for all users.",
-  "showsquid_version": "1.0.BETA1",
+  "showshark_message": "Welcome to the first official release of ShowShark!\n\nVisit the ShowShark website to explore its features and documentation.",
+  "showsquid_version": "1.0",
   "showsquid_download_url": "https://showshark.net/download/",
   "showsquid_download_url_macos": "https://showshark.net/download/",
   "showsquid_download_url_windows": "https://showshark.net/download/",
-  "showsquid_message": "What's changed:\n\n• Initial macOS and Windows release\n• Essential and Advanced modes\n• Discovery and multicast tools for ShowShark"
+  "showsquid_message": "Welcome to the first official release of ShowSquid!\n\nVisit the ShowShark website to explore its features and documentation."
 }

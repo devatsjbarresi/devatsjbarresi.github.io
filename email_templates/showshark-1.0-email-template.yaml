@@ -8,7 +8,7 @@ font-fallback: {}
 hideSwapBanner: false
 id: ac8f9c7b-5e12-4e8e-a2c9-107c8b54e72f
 name: ""
-subject: '🦈 ShowShark 1.0.BETA5 and ShowSquid'
+subject: '🦈 ShowShark 1.0 and ShowSquid'
 ui:
   showDeleteOption: false
   showMoreOption: false
@@ -238,7 +238,7 @@ body:
                       text-valign: top
                       valign: top
                       width: 100%
-                  content: '<p style="text-align: center;"><span style="font-size: 24px; color: rgb(55, 55, 55); font-family: Tahoma, Geneva, sans-serif;">ShowShark 1.0.BETA5</span></p>'
+                  content: '<p style="text-align: center;"><span style="font-size: 24px; color: rgb(55, 55, 55); font-family: Tahoma, Geneva, sans-serif;">ShowShark 1.0</span></p>'
                 -
                   customBlockId: null
                   id: 7b9b97d7-4e82-413f-b6cf-0d4983af5fab
@@ -363,7 +363,7 @@ body:
                       text-valign: top
                       valign: top
                       width: 100%
-                  content: '<p style="text-align: center;"><span style="font-size: 18px; color: rgb(55, 55, 55); font-family: Tahoma, Geneva, sans-serif;">ShowShark 1.0.BETA5</span></p>'
+                  content: '<p style="text-align: center;"><span style="font-size: 18px; color: rgb(55, 55, 55); font-family: Tahoma, Geneva, sans-serif;">ShowShark 1.0</span></p>'
                 -
                   customBlockId: null
                   id: f9c674bc-c07a-4180-9f08-8b70b6665d09
@@ -510,7 +510,7 @@ body:
                       text-valign: top
                       valign: top
                       width: 100%
-                  content: '<p style="margin: 0 0 28px; line-height: 1.6;">ShowShark 1.0.BETA5 is out. This is the release candidate for version 1.0.</p><p style="margin: 0 0 16px;"><span style="font-size: 20px; font-family: Tahoma, Geneva, sans-serif;"><strong>What''s new in BETA5</strong></span></p><ul style="margin: 0 0 34px; padding-left: 24px; line-height: 1.6;"><li style="margin-bottom: 8px;">mDNS and OSC support</li><li style="margin-bottom: 8px;">DMX and OSC Watchers for tracking values across a capture</li><li style="margin-bottom: 8px;">Host Table improvements, including filters, CSV export and First Seen and Last Seen columns</li><li style="margin-bottom: 8px;">Better Filter Builder behaviour</li><li style="margin-bottom: 8px;">Improved menus and customisation</li><li>General fixes and performance improvements</li></ul><div style="margin: 0 0 34px; padding: 24px; background-color: #f5f2fc; border-left: 4px solid #957ae0;"><p style="margin: 0 0 12px;"><span style="font-size: 20px; font-family: Tahoma, Geneva, sans-serif; color: #55427f;"><strong>Introducing ShowSquid</strong></span></p><p style="margin: 0; line-height: 1.6;">ShowSquid is a desktop application for Windows and macOS that works alongside ShowShark. It prompts quiet devices to respond and listens for multicast traffic that might not otherwise reach your computer, helping ShowShark discover more of what''s happening on the network.</p></div><p style="margin: 0 0 14px;"><span style="font-size: 20px; font-family: Tahoma, Geneva, sans-serif;"><strong>Feedback and captures</strong></span></p><p style="margin: 0 0 16px; line-height: 1.6;">As always, feedback is very welcome. If you have an idea for a protocol, device or feature that would be useful to you, please let me know.</p><p style="margin: 0 0 16px; line-height: 1.6;">Captures are particularly helpful because they give me a broader range of devices, manufacturers and protocols to work with. There are already plenty of protocols and features in the pipeline, with more to come.</p><p style="margin: 0 0 28px; line-height: 1.6;">Please feel free to pass this on to anyone who might find it useful.</p><p style="margin: 0; line-height: 1.5;">Seb<br><strong>ShowShark</strong></p>'
+                  content: '<p style="margin: 0 0 28px; line-height: 1.6;">ShowShark 1.0 is out. Welcome to the first official release of ShowShark!</p><p style="margin: 0 0 16px;"><span style="font-size: 20px; font-family: Tahoma, Geneva, sans-serif;"><strong>What''s new in 1.0</strong></span></p><ul style="margin: 0 0 34px; padding-left: 24px; line-height: 1.6;"><li style="margin-bottom: 8px;">mDNS and OSC support</li><li style="margin-bottom: 8px;">DMX and OSC Watchers for tracking values across a capture</li><li style="margin-bottom: 8px;">Host Table improvements, including filters, CSV export and First Seen and Last Seen columns</li><li style="margin-bottom: 8px;">Better Filter Builder behaviour</li><li style="margin-bottom: 8px;">Improved menus and customisation</li><li>General fixes and performance improvements</li></ul><div style="margin: 0 0 34px; padding: 24px; background-color: #f5f2fc; border-left: 4px solid #957ae0;"><p style="margin: 0 0 12px;"><span style="font-size: 20px; font-family: Tahoma, Geneva, sans-serif; color: #55427f;"><strong>Introducing ShowSquid</strong></span></p><p style="margin: 0; line-height: 1.6;">ShowSquid is a desktop application for Windows and macOS that works alongside ShowShark. It prompts quiet devices to respond and listens for multicast traffic that might not otherwise reach your computer, helping ShowShark discover more of what''s happening on the network.</p></div><p style="margin: 0 0 14px;"><span style="font-size: 20px; font-family: Tahoma, Geneva, sans-serif;"><strong>Feedback and captures</strong></span></p><p style="margin: 0 0 16px; line-height: 1.6;">As always, feedback is very welcome. If you have an idea for a protocol, device or feature that would be useful to you, please let me know.</p><p style="margin: 0 0 16px; line-height: 1.6;">Captures are particularly helpful because they give me a broader range of devices, manufacturers and protocols to work with. There are already plenty of protocols and features in the pipeline, with more to come.</p><p style="margin: 0 0 28px; line-height: 1.6;">Please feel free to pass this on to anyone who might find it useful.</p><p style="margin: 0; line-height: 1.5;">Seb<br><strong>ShowShark</strong></p>'
         -
           align: top
           brandable: true

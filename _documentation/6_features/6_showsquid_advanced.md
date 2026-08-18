@@ -82,6 +82,19 @@ Expand **OSC** to enable predefined commands for supported manufacturers or add 
        style="width: 65%; border-radius: 10px; filter: drop-shadow(0 12px 16px rgba(0, 0, 0, 0.28));">
 </p>
 
+### Custom Multicast
+
+Use Custom Multicast to join streams not covered by the built in protocol options. Enter the IPv4 multicast address, from `224.0.0.0` to `239.255.255.255`, and its UDP port.
+
+ShowSquid joins each stream on every selected interface. The main RX indicator shows any custom multicast traffic, while each row shows which stream is active.
+
+Custom Multicast only listens for traffic and does not send packets. Activity and errors appear in the log, and one failed stream does not stop the others.
+
+<p align="center">
+  <img src="/assets/images/showsquid/showsquid_custom_multicast.png" alt="Custom Multicast options with three multicast addresses and UDP ports"
+       style="width: 65%; border-radius: 10px; filter: drop-shadow(0 12px 16px rgba(0, 0, 0, 0.28));">
+</p>
+
 ---
 
 {::nomarkdown}
