@@ -37,7 +37,7 @@ On first run, Wireshark may prompt you to allow access to network interfaces. Gr
 
 1. Double-click the **Personal Lua Plugins** path to open the folder. If it does not exist, allow Wireshark to create it.
 2. Remove any earlier ShowShark plugin files or folders.
-3. Copy the ShowShark Lua plugin file—for example, `ShowShark_v1_0_BETA5.lua`—from the unzipped download into the **Personal Lua Plugins** folder.
+3. Copy the ShowShark Lua plugin file—for example, `ShowShark_v1_0.lua`—from the unzipped download into the **Personal Lua Plugins** folder.
 
 ## Enable the Plugin
 

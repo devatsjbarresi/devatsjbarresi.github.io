@@ -16,6 +16,17 @@ kramdown:
   parse_block_html: true
   parse_span_html: true
 
+# Local working notes are not part of the published site.
+exclude:
+  - WORKSHOP_NOTES.local.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
 # Collections
 collections:
   documentation:

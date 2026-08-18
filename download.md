@@ -92,7 +92,7 @@ permalink: /download/
   <h2 class="shark-title">ShowShark</h2>
   <h2 class="squid-title">ShowSquid</h2>
   <div class="shark-description">
-    <p><strong style="display: inline-block; font-size: 1.25rem; margin-bottom: 0.35rem;">1.0.BETA5</strong><br>Includes example capture file.</p>
+    <p><strong style="display: inline-block; font-size: 1.25rem; margin-bottom: 0.35rem;">1.0</strong><br>Includes example capture file.</p>
   </div>
   <div class="squid-description">
     <p><a href="/docs/showsquid/">ShowSquid</a> is a desktop companion app that gives ShowShark more network traffic to analyse.</p>
@@ -113,32 +113,10 @@ permalink: /download/
 </div>
 {:/}
 
-## Version 1.0.BETA5 Updates
-
-### What's New
-
-- Added mDNS support.
-- Added OSC support.
-- Added DMX and OSC Watchers.
-- Added Hex DMX view.
-- Added Host Table sort options: `IP_Address`, `Hostname`, and `MAC_Address`.
-
-### What's Fixed
-
-- Improved menu structure and UI flow.
-- Improved protocol labelling.
-- Updated Filter Builder behaviour and user experience.
-- Improved the Host Table with filter buttons, CSV export, and First Seen/Last Seen columns.
-- Improved performance and fixed numerous bugs.
-
 ### Known Issues
 
 - Editing manufacturer and protocol filters manually may not update correctly in the Filter Builder.
 - Some captures may still show incomplete hostnames for noisy discovery traffic.
-
-{::nomarkdown}
-{% include version_history.html %}
-{:/}
 
 {::nomarkdown}
 <hr>
@@ -158,7 +136,7 @@ permalink: /download/
     <form id="download-form" action="https://formspree.io/f/meeeenyy" method="POST" novalidate>
       <input type="hidden" name="_subject" value="ShowShark Download">
       <input type="hidden" name="message" value="ShowShark download">
-      <input type="hidden" name="version" value="v1.0.BETA5">
+      <input type="hidden" name="version" value="v1.0">
       <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position: absolute; left: -9999px;">
       <p style="margin-top: 0; margin-bottom: 1rem; color: #666;">A little bit about you.<br>This helps me understand how ShowShark is being used.</p>
 
@@ -197,11 +175,11 @@ permalink: /download/
 
     <div style="display: grid; gap: 0.75rem;">
       <strong>macOS</strong>
-      <a href="https://github.com/devatsjbarresi/ShowShark-Releases/releases/download/1.0.BETA5/ShowSquid_1.0.BETA1_osx-x64.dmg" data-download-product="ShowSquid" data-download-version="v1.0.BETA1" data-download-platform="macOS x64" class="button" style="background-color: #8561E7; color: white; padding: 12px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; text-align: center;">macOS Intel / x64</a>
-      <a href="https://github.com/devatsjbarresi/ShowShark-Releases/releases/download/1.0.BETA5/ShowSquid_1.0.BETA1_osx-arm64.dmg" data-download-product="ShowSquid" data-download-version="v1.0.BETA1" data-download-platform="macOS arm64" class="button" style="background-color: #8561E7; color: white; padding: 12px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; text-align: center;">macOS Apple Silicon / arm64</a>
+      <a href="https://github.com/devatsjbarresi/ShowShark-Releases/releases/download/1.0/ShowSquid_1.0_osx-x64.dmg" data-download-product="ShowSquid" data-download-version="v1.0" data-download-platform="macOS x64" class="button" style="background-color: #8561E7; color: white; padding: 12px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; text-align: center;">macOS Intel / x64</a>
+      <a href="https://github.com/devatsjbarresi/ShowShark-Releases/releases/download/1.0/ShowSquid_1.0_osx-arm64.dmg" data-download-product="ShowSquid" data-download-version="v1.0" data-download-platform="macOS arm64" class="button" style="background-color: #8561E7; color: white; padding: 12px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; text-align: center;">macOS Apple Silicon / arm64</a>
       <strong style="margin-top: 0.5rem;">Windows</strong>
-      <a href="https://github.com/devatsjbarresi/ShowShark-Releases/releases/download/1.0.BETA5/ShowSquid_1.0.BETA1_win-x64_setup.exe" data-download-product="ShowSquid" data-download-version="v1.0.BETA1" data-download-platform="Windows x64 setup" class="button" style="background-color: #8561E7; color: white; padding: 12px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; text-align: center;">Windows x64 installer</a>
-      <a href="https://github.com/devatsjbarresi/ShowShark-Releases/releases/download/1.0.BETA5/ShowSquid_1.0.BETA1_win-arm64_setup.exe" data-download-product="ShowSquid" data-download-version="v1.0.BETA1" data-download-platform="Windows arm64 setup" class="button" style="background-color: #8561E7; color: white; padding: 12px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; text-align: center;">Windows arm64 installer</a>
+      <a href="https://github.com/devatsjbarresi/ShowShark-Releases/releases/download/1.0/ShowSquid_1.0_win-x64_setup.exe" data-download-product="ShowSquid" data-download-version="v1.0" data-download-platform="Windows x64 setup" class="button" style="background-color: #8561E7; color: white; padding: 12px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; text-align: center;">Windows x64 installer</a>
+      <a href="https://github.com/devatsjbarresi/ShowShark-Releases/releases/download/1.0/ShowSquid_1.0_win-arm64_setup.exe" data-download-product="ShowSquid" data-download-version="v1.0" data-download-platform="Windows arm64 setup" class="button" style="background-color: #8561E7; color: white; padding: 12px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; text-align: center;">Windows arm64 installer</a>
     </div>
   </div>
 </div>
@@ -221,7 +199,7 @@ permalink: /download/
   var showSharkDownloadFrame = document.getElementById('showshark-download-frame');
   var showSquidLinks = document.querySelectorAll('#showsquid-download-modal a[data-download-product]');
   var showSquidDownloadFrame = document.getElementById('showsquid-download-frame');
-  var downloadUrl = 'https://github.com/devatsjbarresi/ShowShark-Releases/releases/download/1.0.BETA5/ShowShark_v1.0.BETA5.zip';
+  var downloadUrl = 'https://github.com/devatsjbarresi/ShowShark-Releases/releases/download/1.0/ShowShark_v1.0.zip';
 
   function trackDownload(payload, endpoint) {
     var trackingForm = document.createElement('form');
@@ -326,7 +304,7 @@ permalink: /download/
         e.preventDefault();
         trackDownload({
           product: link.getAttribute('data-download-product') || 'ShowSquid',
-          version: link.getAttribute('data-download-version') || 'v1.0.BETA1',
+          version: link.getAttribute('data-download-version') || 'v1.0',
           platform: link.getAttribute('data-download-platform') || 'Unknown',
           assetUrl: link.href
         }, showSquidTrackingEndpoint);

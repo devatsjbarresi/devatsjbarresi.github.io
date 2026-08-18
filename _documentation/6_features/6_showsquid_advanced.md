@@ -71,15 +71,28 @@ Expand **ArtPoll** to choose how ShowSquid broadcasts ArtPoll messages. **Limite
 
 - Sends SLP service requests and listens for replies.
 
-### OSC
+### OSC Broadcast
 
-Expand **OSC** to enable predefined commands for supported manufacturers or add your own OSC commands. **UDP Out** sets the destination port for each command, while **UDP In** sets the port ShowSquid listens on for incoming messages. Enabled commands are sent every 10 seconds.
+Expand **OSC Broadcast** to enable predefined commands for supported manufacturers or add your own OSC commands.
+
+Messages are sent to the broadcast address of each selected interface's subnet. **UDP Out** sets the destination port for each command, while **UDP In** sets the port ShowSquid listens on for incoming messages. Enabled commands are sent every 10 seconds.
 
 <br>
 
 <p align="center">
   <img src="/assets/images/showsquid/showsquid_osc.png" alt="OSC options with an Eos predefined command, a custom command, and UDP ports"
-       style="width: 65%; border-radius: 10px; filter: drop-shadow(0 12px 16px rgba(0, 0, 0, 0.28));">
+       style="width: 60%; border-radius: 10px; filter: drop-shadow(0 12px 16px rgba(0, 0, 0, 0.28));">
+</p>
+
+### Custom Multicast
+
+Expand **Custom Multicast** to add multicast subscriptions that are not covered by the built in protocol options. ShowSquid joins each subscription on every selected interface but does not send any traffic.
+
+<br>
+
+<p align="center">
+  <img src="/assets/images/showsquid/showsquid_custom_multicast.png" alt="Custom Multicast options with three multicast addresses and UDP ports"
+       style="width: 60%; border-radius: 10px; filter: drop-shadow(0 12px 16px rgba(0, 0, 0, 0.28));">
 </p>
 
 ---
