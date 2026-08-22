@@ -1,11 +1,13 @@
 {
   "version": "1.0",
   "date": "August 2026",
-  "download_url": "https://showshark.net/download/",
+  "download_url": "https://github.com/devatsjbarresi/ShowShark-Releases/releases/download/1.0/ShowShark_v1_0.zip",
   "showshark_message": "Welcome to the first official release of ShowShark!\n\nVisit the ShowShark website to explore its features and documentation.",
-  "showsquid_version": "1.0",
+  "showsquid_version": "1.0.1",
   "showsquid_download_url": "https://showshark.net/download/",
-  "showsquid_download_url_macos": "https://showshark.net/download/",
-  "showsquid_download_url_windows": "https://showshark.net/download/",
+  "showsquid_download_url_macos_x64": "https://github.com/devatsjbarresi/ShowShark-Releases/releases/download/1.0/ShowSquid_1.0.1_osx-x64.dmg",
+  "showsquid_download_url_macos_arm64": "https://github.com/devatsjbarresi/ShowShark-Releases/releases/download/1.0/ShowSquid_1.0.1_osx-arm64.dmg",
+  "showsquid_download_url_windows_x64": "https://github.com/devatsjbarresi/ShowShark-Releases/releases/download/1.0/ShowSquid_1.0.1_win-x64_setup.exe",
+  "showsquid_download_url_windows_arm64": "https://github.com/devatsjbarresi/ShowShark-Releases/releases/download/1.0/ShowSquid_1.0.1_win-arm64_setup.exe",
   "showsquid_message": "Welcome to the first official release of ShowSquid!\n\nVisit the ShowShark website to explore its features and documentation."
 }
